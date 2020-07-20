@@ -15,7 +15,6 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Redirect exact from="/hotel" to="/hotel/home" />
 
           <Route exact path="/hotel/home" render={()=><Home/>}/>
           <Redirect to="/error" />

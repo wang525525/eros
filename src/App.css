@@ -614,6 +614,7 @@ label {
   cursor: pointer;
 }
 
+/* icon style START */
 .tamano-icono{
   width: 21px;
   height: 29px;
@@ -628,3 +629,59 @@ label {
   width: 25px;
   height: 17px;
 }
+
+.img-icon-54 {
+  width: 54px;
+  height: 54px;
+}
+/* icon style END */
+
+/* border style START */
+.border-b {
+  border-bottom: solid 1px #777770;
+}
+/* border style END */
+
+/* switch slider START */
+.cus-switch input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.cus-switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 36px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.cus-switch label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.cus-switch input:checked + label {
+	background: #FE2D66;
+}
+
+.cus-switch input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.cus-switch label:active:after {
+	width: 60px;
+}
+/* switch slider END */
