@@ -46,7 +46,7 @@ function App(props) {
   }
 
 
-  return (<div className="row mt-2 content-box ">
+  return (<div className="row mt-2 content-box ml-0 mr-0">
             {
               generos.map((v,k)=>{
                             return  <div key={k} className="col-4 text-center p-0 leter ">

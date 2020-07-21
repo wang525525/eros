@@ -1,18 +1,38 @@
 import React, {useState,useEffect} from 'react';
 import '../../App.css';
-import logo from '../../assets/images/resources/erosapp-hotel-location.png';
-import background from '../../assets/images/design/bg-motel.png';
-
-
-const divBackground = {
-  backgroundImage: 'url(' + background + ')',
-};
+import moneda from '../../assets/images/resources/eroscoin.png';
 
 
 function App() {
   
   return (
-    <div>header test</div>
+    
+    <nav className="navbar fixed-top navbar-light bg-transparent">
+      <div className="container">
+        <div className="row flex-fill justify-content-center">
+          <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="d-flex">
+              <div className="d-flex ml-auto">
+                <a href="javascript:void(0);">
+                  <img src={moneda} alt="P" className="img-icon-54" />
+                </a>
+                <a href="javascript:void(0);">
+                  <img src={moneda} alt="P" className="img-icon-54" />
+                </a>
+                <a href="javascript:void(0);">
+                  <img src={moneda} alt="P" className="img-icon-54" />
+                </a>
+                <a href="javascript:void(0);">
+                  <img src={moneda} alt="P" className="img-icon-54" />
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    
   )
 }
 
