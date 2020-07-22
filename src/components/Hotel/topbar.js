@@ -13,16 +13,16 @@ function App() {
           <div className="col-sm-12 col-md-8 col-lg-6">
             <div className="d-flex">
               <div className="d-flex ml-auto">
-                <a href="javascript:void(0);">
+                <a href="#" onClick={e => e.preventDefault()}>
                   <img src={moneda} alt="P" className="img-icon-54" />
                 </a>
-                <a href="javascript:void(0);">
+                <a href="#" onClick={e => e.preventDefault()}>
                   <img src={moneda} alt="P" className="img-icon-54" />
                 </a>
-                <a href="javascript:void(0);">
+                <a href="#" onClick={e => e.preventDefault()}>
                   <img src={moneda} alt="P" className="img-icon-54" />
                 </a>
-                <a href="javascript:void(0);">
+                <a href="#" onClick={e => e.preventDefault()}>
                   <img src={moneda} alt="P" className="img-icon-54" />
                 </a>
               </div>

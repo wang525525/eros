@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../../App.css';
-import logo from '../../assets/images/resources/erosapp-user-check.png';
 import background from '../../assets/images/design/bg-escort.jpeg';
 import Link from '@material-ui/core/Link';
 import Config from "../../helpers/config";
@@ -8,9 +7,7 @@ import ContentBoxHomeEscort from "../../screens/ContentBoxHomeEscort";
 import StateContext from '../../helpers/contextState'
 import Functions from "../../helpers/functions";
 import store from "../../helpers/store";
-import Autocomplete from "../AutocompleteCountry";
 
-import ficha from '../../assets/images/resources/eroscoin.png';
 import IconSlideDown from '../common/IconSlideDown';
 
 const divBackground = {
@@ -29,6 +26,7 @@ function App() {
   const context = React.useContext(StateContext);
 
   function handleClick(e) {
+    e.preventDefault()
     if (store.get("escort").nationality !== undefined && store.get("escort").nationality !== '' && inputs.gender !== '') {
       /*PUSH DATA STORE*/
       let Motel = store.get("motel");
@@ -78,6 +76,11 @@ function App() {
     setInputs(_inputs)
   }
 
+  function clickHandler(e) {
+    e.preventDefault()
+    window.location.href = Config.ConfigAppUrl + 'hotel/home';
+  }
+
   return (
     <div className="App-LogoCenter App-splash" style={divBackground}>
       <form className="App-form App-form-register">
@@ -98,7 +101,7 @@ function App() {
                 
                 <div className="ml-auto mt-auto mb-auto">
                   <div onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none"
-                    href="javascript:void(0);" >
+                    href="#" onClick={e => e.preventDefault()}>
                     Retirar
                     </div>
                 </div>
@@ -123,7 +126,7 @@ function App() {
           }
         </div>
       </form>
-      <IconSlideDown></IconSlideDown>
+      <IconSlideDown clickHandler={clickHandler}></IconSlideDown>
     </div>
   )
 }

@@ -70,23 +70,35 @@ function App() {
         setBtn(value);
   }
 
+  function GotoRegister(e) {
+    e.preventDefault();
+    let url = '';
+    if (btn === 'Cliente') {
+      url = 'register/client0';
+    } else if (btn === 'Escort') {
+      url = 'register/client0';
+    } else if (btn === 'Hotel') {
+      url = 'register/hotel0';
+    }
+    window.location.href = Config.ConfigAppUrl + url;
+  }
 
   return (
     <div className="App-LogoCenter App-splash" style={divBackground}>
       <form className="App-form App-form-register" onSubmit={onSubmit}>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-7 col-sm-3 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
               <img className="img-fluid" src={logo} alt="ErosApp"/>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-12 col-sm-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
               <div className="App-Question text-center">¡Bienvenido!</div>
             </div>
           </div>
           <div className="row justify-content-center mt-3">
-            <div className="col-12 col-sm-4 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
               <div className="input-group mb-3">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
@@ -119,41 +131,47 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-0">
-            <div className="col-12 col-sm-4 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
               <div className="App-Question text-center">Iniciar cuenta como:</div>
             </div>
           </div>
           <div className="row justify-content-md-center mt-4">
-            <div className="col-4 col-sm-2 pr-0 pl-2">
-              <div onClick={()=>ChangeBtn("Cliente")}  className={(btn==='Cliente')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
-                Cliente
-              </div>
-            </div>
-            <div className="col-4 col-sm-2 pr-0 pl-1">
-              <div onClick={()=>ChangeBtn("Escort")} className={(btn==='Escort')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
-                Escort
-              </div>
-            </div>
-            <div className="col-4 col-sm-2 pl-1">
-              <div onClick={()=>ChangeBtn("Hotel")} className={(btn==='Hotel')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
-                Hotel
+            <div className="col-sm-12 col-md-8 col-lg-6">
+              <div className="row justify-content-md-center">
+                <div className="col-4 pr-0 pl-2">
+                  <div onClick={()=>ChangeBtn("Cliente")}  className={(btn==='Cliente')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
+                    Cliente
+                  </div>
+                </div>
+                <div className="col-4 pr-0 pl-1">
+                  <div onClick={()=>ChangeBtn("Escort")} className={(btn==='Escort')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
+                    Escort
+                  </div>
+                </div>
+                <div className="col-4 pl-1">
+                  <div onClick={()=>ChangeBtn("Hotel")} className={(btn==='Hotel')?"btn btn-primary btn-block text-white text-decoration-none":"btn btn-secondary btn-block text-white text-decoration-none"}>
+                    Hotel
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="row justify-content-center mt-3">
-            <div className="col-12 col-sm-4 text-center">
-              <div className="text-center h6">¿No tienes una cuenta? <Link href={Config.ConfigAppUrl+"Auth/Register"} className="text-pink">Regístrate</Link></div>
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+              <div className="text-center h6">
+                ¿No tienes una cuenta? <Link onClick={GotoRegister} className="text-pink cursor">Regístrate</Link>
+              </div>
             </div>
           </div>
           <div className="row justify-content-md-center mt-4">
-            <div className="col-12 col-sm-4">
+            <div className="col-sm-12 col-md-8 col-lg-6">
               <button  className="btn btn-primary btn-block text-white text-decoration-none">
                 Iniciar Sesión
               </button>
             </div>
           </div>
           <div className="row justify-content-center mt-3">
-            <div className="col-12 col-sm-4 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
               <Link className="text-white text-decoration-none h6" href={Config.ConfigAppUrl+"Auth/Recover"} >
                 ¿Olvidaste la contraseña?
               </Link>

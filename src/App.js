@@ -2,10 +2,9 @@ import React from 'react';
 import { Redirect, BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import StateContext from './helpers/contextState';
-import {Home,Dialog,Splash,QuestionAge,NotAgePermited, Auth, Client, Escort, Hotel, Error} from "./components/Index";
+import {Home,Dialog,Splash,QuestionAge,NotAgePermited, Auth, Register, Client, Escort, Hotel, Error} from "./components/Index";
 import store from "./helpers/store";
 import Functions from "./helpers/functions";
-
 
 
 const  publicIp   =   require('public-ip');
@@ -85,6 +84,8 @@ class App extends React.Component {
             <Route exact path="/" render={()=>this.Splash()}/>
             <Route exact path="/NotAgePermited" render={()=><NotAgePermited/>}/>
             <Route exact path="/Auth/*" render={()=><Auth/>}/>
+            <Route exact path="/register/*" render={()=><Register/>}/>
+
             <Route exact path="/client" render={()=><Client/>}/>
             <Route exact path="/escort" render={()=><Escort/>}/>
             <Route exact path="/hotel/*" render={()=><Hotel/>}/>

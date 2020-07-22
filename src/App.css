@@ -243,7 +243,7 @@ html,body{
 
 .form-control:focus {
   border-color: #000 !important;
-  box-shadow: 0 0 5px #FE2D66 !important;
+  box-shadow: none !important;
 }
 
 .text-pink{
@@ -614,6 +614,19 @@ label {
   cursor: pointer;
 }
 
+.fs-xs {
+  font-size: 0.5rem;
+}
+.fs-s {
+  font-size: 0.75rem;
+}
+.fs-n {
+  font-size: 1rem;
+}
+.fs-l {
+  font-size: 1.25rem;
+}
+
 /* icon style START */
 .tamano-icono{
   width: 21px;
@@ -649,6 +662,16 @@ label {
   border-bottom: solid 1px #777770;
 }
 /* border style END */
+
+/* Image Border START */
+.img-top-radius {
+  background: #fff;
+  width: 100px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* Image Border END */
 
 /* switch slider START */
 .cus-switch input[type=checkbox]{

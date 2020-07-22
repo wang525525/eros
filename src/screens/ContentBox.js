@@ -41,7 +41,7 @@ function App(props) {
   return (<div className="row mt-2 content-box ">
             {
               generos.map((v,k)=>{
-                            return  <div key={k} className="col-4 text-center p-1">
+                            return  <div key={k} className="col-4 text-center p-3">
                                       <div className={(props.gender===v.label)?'box-1x1 box-1x1-active rounded':'box-1x1 rounded'} onClick={()  =>{ props.setGender(v.label) }}>
                                         <img src={v.ico} />
                                         <span>{v.label}</span>

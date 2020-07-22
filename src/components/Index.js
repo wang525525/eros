@@ -4,6 +4,7 @@ import Splash from "./Splash";
 import QuestionAge from "./QuestionAge";
 import NotAgePermited from "./NotAgePermited";
 import Auth from "./Auth/Index";
+import Register from "./Register/Index";
 import Client from "./Client/Index";
 import Escort from "./Escort/Index";
 import Hotel from "./Hotel/Index";
@@ -15,6 +16,7 @@ export {
   QuestionAge,
   NotAgePermited,
   Auth,
+  Register,
   Client,
   Escort,
   Hotel,

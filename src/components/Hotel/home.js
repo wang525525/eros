@@ -3,6 +3,8 @@ import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import { makeStyles } from '@material-ui/core/styles';
 
+import Config from "../../helpers/config";
+
 import '../../App.css';
 import logo from '../../assets/images/resources/icono-bancolombia.png';
 import background from '../../assets/images/design/bg-motel.png';
@@ -26,6 +28,11 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
+
+  function clickHandler(e) {
+    e.preventDefault()
+    window.location.href = Config.ConfigAppUrl + 'hotel/setting';
+  }
 
   return (
     <div>
@@ -104,7 +111,7 @@ function App() {
           </div> 
         </div>
       </div>
-      <IconSlideUp></IconSlideUp>
+      <IconSlideUp clickHandler={clickHandler}></IconSlideUp>
     </div>
   )
 }
