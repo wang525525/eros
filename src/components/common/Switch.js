@@ -7,7 +7,7 @@ const SwitchButton =  ({ customContainer,  outerClass, switchButtonID, inputClas
     ?  customContainer
     : ( <span className={outerClass}>
         <input id={switchButtonID} className={inputClass} type="checkbox" {...rest} onChange={(e) => onChange(e)} disabled={disabled} />
-        <label htmlFor={switchButtonID} className={helperClass} title={title} ></label>
+        <label htmlFor={switchButtonID} className={helperClass} title={title} style={{margin: "0px"}}></label>
       </span> )
   );
 }

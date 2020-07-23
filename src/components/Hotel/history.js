@@ -6,7 +6,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 import '../../App.css';
 import iconMail from '../../assets/images/resources/icon-mail.png';
@@ -62,7 +61,7 @@ function App() {
 
   function gotoHotel(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'hotel/home';
+    window.location.href = Config.ConfigAppUrl + 'hotel/setting';
   }
 
   return (

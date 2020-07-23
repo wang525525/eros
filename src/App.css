@@ -195,6 +195,20 @@ html,body{
   color: #C759C8;
 }
 
+.separator-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separator-right::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #777770;
+}
+.separator-right::after {
+  margin-left: .25em;
+}
+
 .App-Description{
   font-size: 16px;
   color: #ccc;

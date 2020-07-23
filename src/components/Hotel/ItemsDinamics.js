@@ -52,12 +52,12 @@ class App extends React.Component {
     return (<>
                 {(this.props.boolTitle===undefined || this.props.boolTitle===true)?<div className="row justify-content-md-center mt-0">
                   <div className="col-12">
-                    <div className="App-Question--x2 text-left">¿Tienes cirugías estéticas?</div>
+                    <div className="App-Question text-left">¿Tienes cirugías estéticas?</div>
                   </div>
                 </div>:''}
                 <div className="row justify-content-md-center mt-0">
                   <div className="col-12">
-                    <div className="input-group mb-3">
+                    <div className="mb-3">
                       {Object.entries(this.state.items).map((_v,k)=>{
                         let v = _v[0]
                         return  <div  key={k}
