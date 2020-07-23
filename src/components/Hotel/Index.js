@@ -3,6 +3,7 @@ import { Redirect, BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./home";
 import Setting from "./setting";
+import Hist from "./history";
 
 class App extends React.Component {
 
@@ -19,6 +20,7 @@ class App extends React.Component {
 
           <Route exact path="/hotel/home" render={()=><Home/>}/>
           <Route exact path="/hotel/setting" render={()=><Setting/>}/>
+          <Route exact path="/hotel/hist" render={()=><Hist/>}/>
           <Redirect to="/error" />
         </Switch>
       </BrowserRouter>

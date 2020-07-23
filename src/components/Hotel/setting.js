@@ -3,12 +3,12 @@ import '../../App.css';
 import background from '../../assets/images/design/bg-escort.jpeg';
 import Link from '@material-ui/core/Link';
 import Config from "../../helpers/config";
-import ContentBoxHomeEscort from "../../screens/ContentBoxHomeEscort";
 import StateContext from '../../helpers/contextState'
 import Functions from "../../helpers/functions";
 import store from "../../helpers/store";
 
 import IconSlideDown from '../common/IconSlideDown';
+import SettingsContent from "./settingsContent";
 
 const divBackground = {
   backgroundImage: 'url(' + background + ')',
@@ -62,11 +62,14 @@ function App() {
     document.location.href = url_continue;
   }
 
-  function _setGender(gender) {
+  function _setGender(gender, url) {
     let _inputs = inputs;
     _inputs.gender = gender;
     setGender(gender);
-    setInputs(_inputs)
+    setInputs(_inputs);
+    if (url) {
+      window.location.href = Config.ConfigAppUrl + url;
+    }
   }
 
   function KeyUp(e) {
@@ -111,19 +114,10 @@ function App() {
 
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
-              <ContentBoxHomeEscort gender={gender} setGender={_setGender} />
+              <SettingsContent gender={gender} setGender={_setGender} />
             </div>
           </div>
             
-
-          {(gender) ? <div className="row justify-content-md-center mt-4">
-            <div className="col-12 col-sm-4 text-center">
-              <Link onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" href={Config.ConfigAppUrl + "Auth/EscortRegister1"} >
-                Continuar
-              </Link>
-            </div>
-          </div> : ''
-          }
         </div>
       </form>
       <IconSlideDown clickHandler={clickHandler}></IconSlideDown>

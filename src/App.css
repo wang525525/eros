@@ -16,6 +16,18 @@ html,body{
   color: white;
 }
 
+.App-Logo {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 3rem;
+}
+
+
 .box-1x1{
   overflow: hidden;
   width: 100%;
@@ -26,14 +38,14 @@ html,body{
   color: white;
   border: solid 1px #777770;
   background-color: #171715;
-
+  cursor: pointer;
 }
 .box-1x1 img{
   width: 30%;
 }
 
 .box-1x1-active{
-  background-color: #FE2D66 !important;
+  background-color: #FE2D6620 !important;
   border: solid 1px #FC2D66;
 }
 
@@ -626,7 +638,9 @@ label {
 .fs-l {
   font-size: 1.25rem;
 }
-
+.fs-xl {
+  font-size: 1.5rem;
+}
 /* icon style START */
 .tamano-icono{
   width: 21px;
@@ -716,3 +730,11 @@ label {
 	width: 60px;
 }
 /* switch slider END */
+
+/* common style START */
+.setting-text {
+  position: absolute;
+  top: 115px;
+}
+
+/* common style END */

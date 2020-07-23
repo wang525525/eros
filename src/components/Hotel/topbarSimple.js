@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 
 
-function App() {
+function App(props) {
   
   return (
     
@@ -10,14 +10,14 @@ function App() {
       <div className="container">
         <div className="row flex-fill justify-content-center">
           <div className="col-sm-12 col-md-8 col-lg-6">
-            <div className="d-flex">
-              <div className="d-flex mr-auto">
-                <a href="javascript:void(0);">
-                  <i className="fa fa-angle-left"></i>
+            <div className="d-flex fs-xl">
+              <div className="d-flex">
+                <a href="#" className="d-flex text-decoration-none text-white" onClick={props.clickHandler}>
+                  <i className="fas fa-chevron-left my-auto pr-2"></i>
                 </a>
               </div>
-              <div className="ml-auto mr-auto">
-                <span>Historial de reservas</span>
+              <div className="mx-auto">
+                <span className="text-pink">{props.name}</span>
               </div>
             </div>
             
