@@ -670,7 +670,10 @@ label {
   width: 25px;
   height: 17px;
 }
-
+.img-icon-62 {
+  width: 62px;
+  height: 62px;
+}
 .img-icon-54 {
   width: 54px;
   height: 54px;
@@ -750,5 +753,7 @@ label {
   position: absolute;
   top: 115px;
 }
-
+.mt-n-1 {
+  margin-top: -1rem;
+}
 /* common style END */
