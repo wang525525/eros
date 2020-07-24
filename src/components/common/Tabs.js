@@ -33,8 +33,6 @@ export default class Tabs extends Component {
         ? activeTabHeaderStyle
         : tabHeaderStyle;
 
-      
-
       return (
         <span
           key={tab.props.value}
@@ -48,15 +46,16 @@ export default class Tabs extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, bottom } = this.props;
     const tabs = Children.toArray(children);
 
     return (
       <div>
-        <div style={tabsHeaderStyle}>{this.getHeader(tabs)}</div>
+        { !bottom && <div style={tabsHeaderStyle}>{this.getHeader(tabs)}</div> }
         <div style={tabsContentStyle}>
           {_.find(tabs, tab => this.isSelected(tab))}
         </div>
+        { bottom && <div style={tabsHeaderStyle}>{this.getHeader(tabs)}</div> }
       </div>
     );
   }
@@ -67,6 +66,7 @@ Tabs.defaultProps = {
 };
 
 Tabs.propTypes = {
+  bottom: PropTypes.bool,
   children: PropTypes.node,
   onChange: PropTypes.func
 };
