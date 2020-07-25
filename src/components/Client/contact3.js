@@ -1,103 +1,174 @@
-import React, {useState} from 'react';
-import '../../App.css';
-import logo from '../../assets/images/resources/icono-reloj.png';
-import background from '../../assets/images/design/bg-erosapp-clientes.png';
-import girlImg from '../../assets/images/design/image-girl.jpg';
+import React, { useState } from 'react';
 
-import StateContext from '../../helpers/contextState'
+import '../../App.css';
+import Rating from '@material-ui/lab/Rating';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import { makeStyles } from '@material-ui/core/styles';
+
+import background from '../../assets/images/design/bg-escort.jpeg';
+import girlImg from '../../assets/images/design/image-girl.jpg';
+import serviceImg from '../../assets/images/resources/icono-services.png';
+import moneda from '../../assets/images/resources/eroscoin.png';
+
 import Config from "../../helpers/config";
+import StateContext from '../../helpers/contextState'
 
 import TopbarSimple from "./topbarSimple";
 import ProgressBar from "./progressBar";
-import { func } from 'prop-types';
 
 const divBackground = {
   backgroundImage: 'url(' + background + ')',
 };
 
+
+const useStyles = makeStyles({
+  iconEmpty: {
+    color: '#ffb400'
+  }
+});
 function App() {
-  const context               =   React.useContext(StateContext);
+  const classes = useStyles();
+  const context = React.useContext(StateContext);
 
   function gotoHotel(e) {
-    e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/home';
-  }
-
-  function gotoSubContact(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/contact2';
   }
 
+  function gotoNext(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/contact3sub1';
+  }
   return (
+
     <div>
       <TopbarSimple clickHandler={gotoHotel} name={'Contratar'}></TopbarSimple>
-      <div className="App-LogoCenter App-splash" style={divBackground}>
-        
-        <div className="App-form-register container">
+      <div className="App-Logo App-splash" style={divBackground}>
+
+        <div className="App-form-secondary container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
-  
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
-                  </div>
-                  <div className="">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
-                  </div>
+            <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+
+              <div className="row justify-content-center mt-2">
+                <div className="col-sm-12 text-center">
+                  <img src={girlImg} className="img-icon-80 rounded" />
                 </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
+                <div className="col-sm-12 text-center">
+                  <span className="text-morado fs-xl">Sexy20, 29</span>
+                </div>
+                <div className="col-sm-12 text-center">
+                  <Rating 
+                    name="read-only" 
+                    value={4} 
+                    emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                    classes={{iconEmpty: classes.iconEmpty}}
+                    readOnly />
                 </div>
               </div>
 
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
+              <div className="d-flex pt-2">
+                <img src={moneda} alt="P" className="img-icon-54" />
+                <div className="pl-3">
+                  <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                    $100
                   </div>
-                  <div className="">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
+                  <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                    COP $50.000
                   </div>
                 </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
+                <div className="ml-auto mt-auto mb-auto">
+                  <div className="btn btn-primary text-white text-decoration-none">
+                    Retirar
+                  </div>
                 </div>
               </div>
 
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
+              <div class="d-flex border-b pt-2">
+                <button class="btn btn-primary w-100 py-3 fs-l mb-3">Recarga tu saldo</button>
+              </div>
+
+              <div className="pt-2">
+                <span className="text-morado fs-l">Detalles de pago</span>
+                <div className="input-group my-3 p-3 rounded">
+
+                  <div className="d-flex pt-2 w-100 border-b">
+                    <div className="pl-3">
+                      <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                        Stripetease
+                      </div>
+                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                        Valor de servicio
+                      </div>
+                    </div>
+                    <div className="ml-auto mt-auto mb-auto">
+                      <div className="text-left App-Question--x2 tamano-texto-interno2 text-right">
+                        $200
+                      </div>
+                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right">
+                        COP $100.000
+                      </div>
+                    </div>
                   </div>
-                  <div className="">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
+
+                  <div className="d-flex pt-2 w-100">
+                    <div className="pl-3">
+                      <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                        A domicilio
+                      </div>
+                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                        valor del transpore
+                      </div>
+                    </div>
+                    <div className="ml-auto mt-auto mb-auto">
+                      <div className="text-left App-Question--x2 tamano-texto-interno2 text-right">
+                        $20
+                      </div>
+                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right">
+                        COP $10.000
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
+
                 </div>
               </div>
-  
-              <div className="row justify-content-center mt-5">
+
+              <div className="d-flex pt-2">
+                <div className="pl-3 my-auto">
+                  <span className="text-morado fs-l">Total a pagar</span>
+                </div>
+                <div className="ml-auto mt-auto mb-auto">
+                  <div className="text-left App-Question--x2 tamano-texto-interno2 text-right fs-xl">
+                    $220
+                  </div>
+                  <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right fs-l">
+                    COP $110.000
+                  </div>
+                </div>
+              </div>
+
+              <div className="d-flex pt-4 fs-l">
+                <button className="btn btn-secondary w-50 mx-2">
+                  <i className="fas fa-tag pr-2"></i>
+                  Usar bono
+                </button>
+                <button className="btn btn-primary w-50 mx-2" onClick={gotoNext}>
+                  <i className="fas fa-credit-card pr-2"></i>
+                  Pagar
+                </button>
+              </div>
+
+              <div className="row justify-content-center mt-4">
                 <div className="col-sm-12">
-                  <ProgressBar curPoint={1}></ProgressBar>
+                  <ProgressBar curPoint={2}></ProgressBar>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-  
+
       </div>
     </div>
-    
+
   )
 }
 

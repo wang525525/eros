@@ -31,7 +31,7 @@ function App() {
             ico:'fas fa-check pl-1',
           },
       customButtom:{
-        link:Config.ConfigAppUrl+"client/contact3",
+        link:Config.ConfigAppUrl+"client/contact2sub2",
       }
     }
 
