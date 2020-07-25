@@ -110,6 +110,7 @@ function App() {
             </div>
           </div> 
         </div>
+      
       </div>
       <IconSlideUp clickHandler={clickHandler}></IconSlideUp>
     </div>

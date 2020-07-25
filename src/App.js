@@ -89,7 +89,9 @@ class App extends React.Component {
             <Route exact path="/client/*" render={()=><Client/>}/>
             <Redirect exact from="/client" to="/client/home" />
 
-            <Route exact path="/escort" render={()=><Escort/>}/>
+            <Route exact path="/escort/*" render={()=><Escort/>}/>
+            <Redirect exact from="/escort" to="/escort/home" />
+
             <Route exact path="/hotel/*" render={()=><Hotel/>}/>
             <Redirect exact from="/hotel" to="/hotel/home" />
 
