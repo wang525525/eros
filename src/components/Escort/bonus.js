@@ -1,0 +1,186 @@
+import React, { useState } from 'react';
+
+
+import '../../App.css';
+import background from '../../assets/images/design/bg-escort.jpeg';
+import iconMail from '../../assets/images/resources/icon-mail.png';
+import bancolombiaImg from '../../assets/images/resources/icono-bancolombia.png';
+import creditImg from '../../assets/images/resources/icono-tarjeta-credito.png';
+import girlImg from '../../assets/images/design/image-girl.jpg';
+
+import Config from "../../helpers/config";
+
+import TopbarSimple from "./topbarSimple";
+import Tabs from "../common/Tabs";
+import Tab from "../common/Tab";
+
+const divBackground = {
+  backgroundImage: 'url(' + background + ')',
+};
+
+
+function App() {
+
+  function gotoEscort(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'escort/setting';
+  }
+
+  return (
+
+    <div>
+      <TopbarSimple clickHandler={gotoEscort} name={'Bonos y referidos'}></TopbarSimple>
+      <div className="App-Logo App-splash" style={divBackground}>
+
+        <div className="container">
+          <div className="row justify-content-center set_width_container">
+            <div className="col-sm-12 col-md-8 col-lg-6">
+              <Tabs>
+                <Tab active={true} value="refiere" header="Refiere y gana">
+
+                  <div className="row justify-content-center">
+                    <div className="col-6 col-sm-6 text-center mt-5">
+                      <img className="img-fluid" src={bancolombiaImg} alt="ErosApp"/>
+                    </div>
+                  </div>
+                  
+                  <div className="row justify-content-center mt-5">
+                    <div className="col-12 col-sm-12 text-center">
+                      <div className="App-Question text-center">
+                        Vaya, aún no tienes bonos.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row justify-content-center mt-3">
+                    <div className="col-12 col-sm-12 text-center">
+                      <div className="fs-n text-center">
+                        ¡Gana el 10% del primer servicio que preste o tome tu referido!
+                      </div>
+                    </div>
+                  </div>
+
+                </Tab>
+
+                <Tab value="referidos" header="Referidos">
+
+                  <div className="d-flex mt-4 p-2 bg-gray rounded">
+                    <div className="mr-auto my-auto">
+                      <div className="d-flex">
+                        <img src={girlImg} className="img-icon-48 rounded" />
+                        <span className="text-morado fs-n pl-2 my-auto">Sexy 20, 29</span>
+                      </div>
+                    </div>
+                    <div className="m-auto">
+                      <div className="d-flex">
+                        <img src={creditImg} className="img-icon-32" />
+                      </div>
+                    </div>
+                    <div className="ml-auto my-auto fs-n">
+                      <div className="text-right">
+                        03/03/2020
+                      </div>
+                      <div className="text-right text-morado">
+                        Servicio tomado
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex mt-2 p-2 bg-gray rounded">
+                    <div className="mr-auto my-auto">
+                      <div className="d-flex">
+                        <img src={girlImg} className="img-icon-48 rounded" />
+                        <span className="text-morado fs-n pl-2 my-auto">Sexy 20, 29</span>
+                      </div>
+                    </div>
+                    <div className="m-auto">
+                      <div className="d-flex">
+                        <img src={creditImg} className="img-icon-32" />
+                      </div>
+                    </div>
+                    <div className="ml-auto my-auto fs-n">
+                      <div className="text-right">
+                        03/03/2020
+                      </div>
+                      <div className="text-right text-morado">
+                        Servicio tomado
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex mt-2 p-2 bg-gray rounded">
+                    <div className="mr-auto my-auto">
+                      <div className="d-flex">
+                        <img src={girlImg} className="img-icon-48 rounded" />
+                        <span className="text-morado fs-n pl-2 my-auto">Sexy 20, 29</span>
+                      </div>
+                    </div>
+                    <div className="m-auto">
+                      <div className="d-flex">
+                        <img src={creditImg} className="img-icon-32" />
+                      </div>
+                    </div>
+                    <div className="ml-auto my-auto fs-n">
+                      <div className="text-right">
+                        03/03/2020
+                      </div>
+                      <div className="text-right text-morado">
+                        Servicio tomado
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex mt-2 p-2 bg-gray rounded">
+                    <div className="mr-auto my-auto">
+                      <div className="d-flex">
+                        <img src={girlImg} className="img-icon-48 rounded" />
+                        <span className="text-morado fs-n pl-2 my-auto">Sexy 20, 29</span>
+                      </div>
+                    </div>
+                    <div className="m-auto">
+                      <div className="d-flex">
+                        <img src={creditImg} className="img-icon-32" />
+                      </div>
+                    </div>
+                    <div className="ml-auto my-auto fs-n">
+                      <div className="text-right">
+                        03/03/2020
+                      </div>
+                      <div className="text-right text-morado">
+                        Servicio tomado
+                      </div>
+                    </div>
+                  </div>
+
+                </Tab>
+
+                <Tab value="bonos" header="Bonos">
+
+                  <div className="row justify-content-center">
+                    <div className="col-6 col-sm-6 text-center mt-5">
+                      <img className="img-fluid" src={iconMail} alt="ErosApp"/>
+                    </div>
+                  </div>
+                  
+                  <div className="row justify-content-center mt-5">
+                    <div className="col-12 col-sm-12 text-center">
+                      <div className="App-Question text-center">
+                        ¡Vamos, invita a otros chicos y chicas a utilizar Eros!
+                      </div>
+                    </div>
+                  </div>
+
+                </Tab>
+
+              </Tabs>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  )
+}
+
+export default App;

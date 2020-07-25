@@ -334,6 +334,9 @@ html,body{
   color: #C759C8 !important;
 }
 
+.text-light-green {
+  color: #88E000;
+}
 a.realtantes,
 a.realtantes:hover,
 a.realtantes:focus{
@@ -595,6 +598,13 @@ label {
   background-color: #171715;
 }
 
+.bg-gray {
+  background-color: #353535;
+}
+
+.bg-trans-black {
+  background-color: rgba(0,0,0,0.5);
+}
 
 .text-gray{
   color: #999999 !important;
@@ -904,5 +914,13 @@ label {
 .progressbar li.past:after {
   background-color: #FE2D66;
 }
-
+.custom-table table, .custom-table th, .custom-table td {
+  border: 1px solid #777770;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
 /* common style END */

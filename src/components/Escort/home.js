@@ -74,7 +74,7 @@ function App() {
                     switchButtonID = "demoID" 
                     inputClass = ""
                     helperClass = ""
-                  />  
+                  />
                 </div>
               </div>
               <div className="text-gray">

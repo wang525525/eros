@@ -8,6 +8,10 @@ import Config from "../../helpers/config";
 
 function App() {
 
+  function gotoSencilla(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'hotel/sencilla';
+  }
   return (
 
           <div className="App-form-register container">
@@ -46,7 +50,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 " href={Config.ConfigAppUrl + 'hotel/sencilla'}>
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
                       Sencilla
                     </div>
                   </div>
@@ -65,7 +69,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
                       Sencilla
                     </div>
                   </div>
@@ -84,7 +88,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
                       Sencilla
                     </div>
                   </div>

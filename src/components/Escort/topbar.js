@@ -1,9 +1,14 @@
 import React, {useState,useEffect} from 'react';
 import '../../App.css';
-import moneda from '../../assets/images/resources/eroscoin.png';
 
+import Config from '../../helpers/config';
 
 function App() {
+  
+  function gotoNotification(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'escort/notification';
+  }
   
   return (
     
@@ -16,7 +21,7 @@ function App() {
                 <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
                   <i className="fa fa-tag fa-2x"></i>
                 </a>
-                <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
+                <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">
                   <i className="fa fa-bullhorn fa-2x"></i>
                 </a>
               </div>

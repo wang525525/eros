@@ -13,31 +13,31 @@ function App(props) {
   const generos = [{
     label: "Editar perfil",
     ico: user,
-    url: "hotel/edit"
+    url: "escort/edit"
   }, {
     label: "Configuración",
     ico: setting,
-    url: "hotel/config"
+    url: "escort/config"
   }, {
     label: "Historial de pagos y servicios",
     ico: money,
-    url: "hotel/hist"
+    url: "escort/hist"
   }, {
     label: "Bonos y referidos",
     ico: bonus,
-    url: "hotel/bonus"
+    url: "escort/bonus"
   }, {
     label: "Chat y soporte",
     ico: chat,
-    url: "hotel/chat"
+    url: "escort/chat"
   }, {
     label: "Sobre Eroscort",
     ico: about,
-    url: "hotel/about"
+    url: "escort/about"
   }, {
     label: "Cerrar sesión",
     ico: exit,
-    url: "hotel/exit"
+    url: "escort/exit"
   },
   ]
 
