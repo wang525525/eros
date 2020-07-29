@@ -3,7 +3,7 @@ import '../../App.css';
 
 import Config from '../../helpers/config';
 
-function App() {
+function App(props) {
   
   function gotoNotification(e) {
     e.preventDefault();
@@ -18,10 +18,10 @@ function App() {
           <div className="col-sm-12 col-md-8 col-lg-6">
             <div className="d-flex">
               <div className="d-flex ml-auto">
-                <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
+                <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">
                   <i className="fa fa-tag fa-2x"></i>
                 </a>
-                <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">
+                <a href="#" onClick={props.showNotificationModal} className="text-white my-auto p-3">
                   <i className="fa fa-bullhorn fa-2x"></i>
                 </a>
               </div>

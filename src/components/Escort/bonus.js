@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 import '../../App.css';
 import background from '../../assets/images/design/bg-escort.jpeg';
-import iconMail from '../../assets/images/resources/icon-mail.png';
+import bonus20Img from '../../assets/images/resources/bonus-20.png';
+import bonus50Img from '../../assets/images/resources/bonus-50.png';
+import bonus100Img from '../../assets/images/resources/bonus-100.png';
 import bancolombiaImg from '../../assets/images/resources/icono-bancolombia.png';
 import creditImg from '../../assets/images/resources/icono-tarjeta-credito.png';
 import girlImg from '../../assets/images/design/image-girl.jpg';
@@ -11,6 +13,7 @@ import girlImg from '../../assets/images/design/image-girl.jpg';
 import Config from "../../helpers/config";
 
 import TopbarSimple from "./topbarSimple";
+
 import Tabs from "../common/Tabs";
 import Tab from "../common/Tab";
 
@@ -156,7 +159,8 @@ function App() {
 
                 <Tab value="bonos" header="Bonos">
 
-                  <div className="row justify-content-center">
+                  {/* This part is for non-content. for now this part is no needed. */}
+                  {/* <div className="row justify-content-center">
                     <div className="col-6 col-sm-6 text-center mt-5">
                       <img className="img-fluid" src={iconMail} alt="ErosApp"/>
                     </div>
@@ -168,6 +172,56 @@ function App() {
                         ¡Vamos, invita a otros chicos y chicas a utilizar Eros!
                       </div>
                     </div>
+                  </div> */}
+
+                  {/* This part is for content */}
+                  <div className="row">
+
+                    <div className="col-6 mt-3">
+                      <div className="custom-card">
+                        <img className="img-fluid" src={bonus20Img} alt="bonus-img" />
+                        <div className="card-body">
+                          <span className="text-morado fs-xl d-flex">Winner $20,000</span>
+                          <span className="d-flex fs-n text-break">
+                            ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
+                          </span>
+                          <div className="d-flex justify-content-center pt-2">
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-6 mt-3">
+                      <div className="custom-card">
+                        <img className="img-fluid" src={bonus50Img} alt="bonus-img" />
+                        <div className="card-body">
+                          <span className="text-morado fs-xl d-flex">Winner $50,000</span>
+                          <span className="d-flex fs-n text-break">
+                            ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
+                          </span>
+                          <div className="d-flex justify-content-center pt-2">
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-6 mt-3">
+                      <div className="custom-card">
+                        <img className="img-fluid" src={bonus100Img} alt="bonus-img" />
+                        <div className="card-body">
+                          <span className="text-morado fs-xl d-flex">Winner $100,000</span>
+                          <span className="d-flex fs-n text-break">
+                            ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
+                          </span>
+                          <div className="d-flex justify-content-center pt-2">
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
                 </Tab>

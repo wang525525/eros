@@ -12,6 +12,9 @@ import Bonus from "./bonus";
 import About from "./about";
 import Exit from "./exit";
 import Chat from "./chat";
+import ServiceDuration from "./serviceDuration";
+import ServiceAddTime from "./serviceAddTime";
+import ServicePay from "./servicePay";
 
 class App extends React.Component {
 
@@ -39,7 +42,9 @@ class App extends React.Component {
           <Route exact path="/escort/about" render={()=><About/>}/>
           <Route exact path="/escort/exit" render={()=><Exit/>}/>
           <Route exact path="/escort/chat" render={()=><Chat/>}/>
-          
+          <Route exact path="/escort/serviceduration" render={()=><ServiceDuration/>}/>
+          <Route exact path="/escort/serviceadd" render={()=><ServiceAddTime/>}/>
+          <Route exact path="/escort/servicepay" render={()=><ServicePay/>}/>
 
           <Redirect to="/error" />
         </Switch>

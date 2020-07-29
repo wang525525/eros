@@ -8,6 +8,8 @@ import defaultMan from '../../assets/images/design/image-default.jpg';
 import Link from '@material-ui/core/Link';
 import Config from "../../helpers/config";
 
+import Accordion from './accordion';
+
 import TopbarSimple from "./topbarSimple";
 
 const divBackground = {
@@ -31,11 +33,14 @@ function App() {
         <div className="container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-6">
-              Sobre Eroscort page
+              <iframe className="mt-3" width="100%" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+              <div className="d-flex pt-3">
+                <Accordion></Accordion>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

@@ -729,6 +729,9 @@ label {
 .fs-xxl {
   font-size: 2rem;
 }
+.fs-xxxl {
+  font-size: 3rem;
+}
 /* icon style START */
 .tamano-icono{
   width: 21px;
@@ -743,6 +746,10 @@ label {
 .tamano-icono3{
   width: 25px;
   height: 17px;
+}
+.img-icon-100 {
+  width: 100px;
+  height: 100px;
 }
 .img-icon-80 {
   width: 80px;
@@ -776,6 +783,12 @@ label {
 /* border style START */
 .border-b {
   border-bottom: solid 1px #777770;
+}
+.border-grey {
+  border: solid 1px #777770;
+}
+.border-active {
+  border: solid 1px #FE2D66;
 }
 /* border style END */
 
@@ -924,3 +937,106 @@ label {
   width: 40%;
 }
 /* common style END */
+
+
+.custom-card {
+  border: solid 1px #777770;
+}
+.custom-card img {
+  max-width: 100%;
+}
+.custom-card .card-body {
+  background: #353535;
+  padding: 1rem;
+}
+
+/* accordion START */
+.accordion-main {
+  background: #353535;
+  overflow: hidden;
+  border: solid 1px #777770;
+  border-radius: 0.25rem;
+}
+.accordion-main .title {
+  color: #C759C8;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section .down-icon {
+  display: none;
+}
+.section.open .down-icon {
+  display: inline;
+  color: #FE2D66;
+  transform: rotate(90deg);
+} 
+.section .left-icon {
+  display: inline;
+  color: #FE2D66;
+  transform: rotate(90deg);
+}
+.section.open .left-icon {
+  display: none;
+} 
+
+.section.open .articlewrap {
+  max-height: 100rem;
+}
+
+.articlewrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .2s ease-in;
+}
+
+.sectionhead {
+  width: 100%;
+  overflow: hidden;
+  background: #171715;
+  cursor: pointer;
+  color: #C759C8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.75em;
+}
+.article {
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-top: solid 1px #777777;
+}
+/* accordion END */
+
+.modal-content {
+  background: transparent !important;
+}
+.modal-dialog-center {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.icon-round-border {
+  border: solid 2px #777777;
+  border-radius: 50%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+.img-round-border {
+  border: solid 2px #fff;
+  border-radius: 4px;
+}
+.badge-img {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+}
