@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import '../../App.css';
-import moneda from '../../assets/images/resources/eroscoin.png';
+import bedImg from '../../assets/images/resources/icon-bed.png';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <div className="d-flex">
               <div className="d-flex ml-auto">
                 <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
-                  <i className="fa fa-car-alt fa-2x"></i>
+                  <img src={bedImg} className="img-icon-32" />
                 </a>
                 <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
                   <i className="fa fa-concierge-bell fa-2x"></i>

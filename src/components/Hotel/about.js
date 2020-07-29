@@ -53,8 +53,8 @@ function App() {
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="container">
-          <div className="row justify-content-center set_width_container mt-3">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+          <div className="row justify-content-center set_width_container mt-3 m-0">
+            <div className="col-sm-12 col-md-8 col-lg-6 p-0">
               <LazyImageProvider>
                 <Carousel>
                   {images.map((image, i) => (
@@ -65,8 +65,8 @@ function App() {
             </div>
           </div>
 
-          <div className="row justify-content-center pb-3 m-0 background-gray">
-            <div className="col-sm-12 col-md-8 col-lg-6 px-0">
+          <div className="row justify-content-center m-0">
+            <div className="col-sm-12 col-md-8 col-lg-6 px-0 background-gray">
               <div className="row mt-n-1">
                 <div className="col-3 text-center">
                   <img className="img-fluid img-icon-62 rounded" src={logo} alt="ErosApp"/>
@@ -111,7 +111,7 @@ function App() {
                 <button className="btn btn-secondary mr-2">Presidencial</button>
               </div>
             
-              <button className="btn btn-primary w-100 py-3 mt-4">Reservar</button>
+              <button className="btn btn-primary w-100 py-3 mt-4 mb-4">Reservar</button>
             </div>
           </div>
 
