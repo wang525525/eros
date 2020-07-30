@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-
-import '../../App.css';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import { makeStyles } from '@material-ui/core/styles';
 
+import '../../App.css';
+
 import background from '../../assets/images/design/bg-escort.jpeg';
 import girlImg from '../../assets/images/design/image-girl.jpg';
-import serviceImg from '../../assets/images/resources/icono-services.png';
+import payImg from '../../assets/images/resources/icono-tarjeta-credito.png';
 import moneda from '../../assets/images/resources/eroscoin.png';
 
 import Config from "../../helpers/config";
@@ -30,7 +31,10 @@ function App() {
   const classes = useStyles();
   const context = React.useContext(StateContext);
 
-  function gotoHotel(e) {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
+  function gotoPrev(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/contact2';
   }
@@ -39,10 +43,21 @@ function App() {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/contact3sub1';
   }
+
+  function showModal(e) {
+    e.preventDefault();
+    setModal(true);
+  }
+
+  function gotoClient(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/home';
+  }
+
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHotel} name={'Contratar'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="App-form-secondary container">
@@ -84,7 +99,7 @@ function App() {
               </div>
 
               <div class="d-flex border-b pt-2">
-                <button class="btn btn-primary w-100 py-3 fs-l mb-3">Recarga tu saldo</button>
+                <button class="btn btn-primary w-100 py-3 fs-l mb-3" onClick={gotoNext}>Recarga tu saldo</button>
               </div>
 
               <div className="pt-2">
@@ -151,7 +166,7 @@ function App() {
                   <i className="fas fa-tag pr-2"></i>
                   Usar bono
                 </button>
-                <button className="btn btn-primary w-50 mx-2" onClick={gotoNext}>
+                <button className="btn btn-primary w-50 mx-2" onClick={showModal}>
                   <i className="fas fa-credit-card pr-2"></i>
                   Pagar
                 </button>
@@ -167,6 +182,38 @@ function App() {
         </div>
 
       </div>
+
+      {/* Modal START */}
+      <Modal isOpen={modal} toggle={toggle} className="modal-dialog-center" >
+        <ModalBody className="bg-white rounded p-0">
+
+          <div className="row m-0">
+            <div className="col-sm-12 text-center p-3">
+              <div className="row justify-content-center">
+                <div className="col-8">
+                  <img src={payImg} alt="confirm" className="w-100" />
+                </div>
+              </div>
+
+              <div className="pb-2 text-center">
+                <span className="text-black fs-xxl font-weight-bolder">
+                  ¡Tu pago ha sido confirmado!
+                </span>
+              </div>
+              <div className="pb-2 text-center">
+                <span className="text-grey fs-xl">Ya puedes ponerte en contacto con <span className="text-pink">sexy20</span>, para concretar los detalles del servicio</span>
+              </div>
+
+              <div className="d-flex">
+                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoClient}>Continuar</button>
+              </div>
+
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>
+      {/* Modal  END */}
+
     </div>
 
   )

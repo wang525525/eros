@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../App.css';
 
@@ -6,6 +7,7 @@ import background from '../../assets/images/design/bg-escort.jpeg';
 import clientImg from '../../assets/images/design/image-default.jpg';
 import logo from '../../assets/images/resources/icon-eroscoin.png';
 import moneda from '../../assets/images/resources/eroscoin.png';
+import payImg from '../../assets/images/resources/icono-tarjeta-credito.png';
 
 import Config from "../../helpers/config";
 import StateContext from '../../helpers/contextState'
@@ -19,35 +21,28 @@ const divBackground = {
 
 
 function App() {
-  const context               =   React.useContext(StateContext);
-  
-  function gotoHotel(e) {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
+  function gotoPrev(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/contact2';
+    window.location.href = Config.ConfigAppUrl + 'client/contact3';
   }
 
-  function gotoNext(e) {
+  function showModal(e) {
     e.preventDefault();
-    let modal = {
-      status:true,
-      title:"¡Tu solicitud ha sido exitosa!",
-      message:"Tu billetera ha sido cargada con EC $1000",
-      ico:{
-            contentColor:"modal-ico-bg-primary",
-            ico:'fas fa-check pl-1',
-          },
-      customButtom:{
-        link:Config.ConfigAppUrl+"client/home",
-      }
-    }
+    setModal(true);
+  }
 
-    context.setState({dialog:modal})
+  function gotoClient(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/home';
   }
 
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHotel} name={'Contratar'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="App-form-secondary container">
@@ -108,7 +103,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <button className="btn btn-primary text-white text-decoration-none" onClick={gotoNext}>
+                  <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
                     Retirar
                   </button>
                 </div>
@@ -125,7 +120,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <button className="btn btn-primary text-white text-decoration-none" onClick={gotoNext}>
+                  <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
                     Retirar
                   </button>
                 </div>
@@ -142,7 +137,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <button className="btn btn-primary text-white text-decoration-none" onClick={gotoNext}>
+                  <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
                     Retirar
                   </button>
                 </div>
@@ -159,7 +154,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <button className="btn btn-primary text-white text-decoration-none" onClick={gotoNext}>
+                  <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
                     Retirar
                   </button>
                 </div>
@@ -175,6 +170,38 @@ function App() {
         </div>
 
       </div>
+
+      {/* Modal START */}
+      <Modal isOpen={modal} toggle={toggle} className="modal-dialog-center" >
+        <ModalBody className="bg-white rounded p-0">
+
+          <div className="row m-0">
+            <div className="col-sm-12 text-center p-3">
+              <div className="row justify-content-center">
+                <div className="col-8">
+                  <img src={payImg} alt="confirm" className="w-100" />
+                </div>
+              </div>
+
+              <div className="pb-2 text-center">
+                <span className="text-black fs-xxl font-weight-bolder">
+                  ¡Tu pago ha sido confirmado!
+                </span>
+              </div>
+              <div className="pb-2 text-center">
+                <span className="text-grey fs-xl">Ya puedes ponerte en contacto con <span className="text-pink">sexy20</span>, para concretar los detalles del servicio</span>
+              </div>
+
+              <div className="d-flex">
+                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoClient}>Continuar</button>
+              </div>
+
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>
+      {/* Modal  END */}
+
     </div>
 
   )

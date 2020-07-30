@@ -37,7 +37,7 @@ function App(props) {
   }, {
     label: "Cerrar sesión",
     ico: exit,
-    url: "client/exit"
+    url: "exit"
   },
   ]
 

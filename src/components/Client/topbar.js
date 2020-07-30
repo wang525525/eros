@@ -10,7 +10,16 @@ function App() {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/seeker';
   }
+
+  function gotoNotification(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/notification';
+  }
   
+  function gotoBonus(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/bonus';
+  }
   return (
     
     <nav className="navbar fixed-top navbar-light bg-transparent">
@@ -29,10 +38,10 @@ function App() {
                 </a>
               </div>
               <div className="d-flex ml-auto">
-                <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
+                <a href="#" onClick={gotoBonus} className="text-white my-auto p-3">
                   <i className="fa fa-tag"></i>
                 </a>
-                <a href="#" onClick={e => e.preventDefault()} className="text-white my-auto p-3">
+                <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">
                   <i className="fa fa-bullhorn"></i>
                 </a>
               </div>

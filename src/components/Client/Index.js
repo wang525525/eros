@@ -17,6 +17,10 @@ import Bonus from "./bonus";
 import Chat from "./chat";
 import About from "./about";
 import Exit from "./exit";
+import Notification from "./notification";
+import Search from "./search";
+import Details from "./details";
+
 
 class App extends React.Component {
 
@@ -42,12 +46,15 @@ class App extends React.Component {
           <Route exact path="/client/contact3" render={()=><Contact3/>}/>
           <Route exact path="/client/contact3sub1" render={()=><Contact3Sub1/>}/>
           <Route exact path="/client/hist" render={()=><Hist/>}/>
+          <Route exact path="/client/details" render={()=><Details/>}/>
           <Route exact path="/client/edit" render={()=><EditProfile/>}/>
           <Route exact path="/client/config" render={()=><Configuration/>}/>
           <Route exact path="/client/bonus" render={()=><Bonus/>}/>
           <Route exact path="/client/chat" render={()=><Chat/>}/>
           <Route exact path="/client/about" render={()=><About/>}/>
           <Route exact path="/client/exit" render={()=><Exit/>}/>
+          <Route exact path="/client/notification" render={()=><Notification/>}/>
+          <Route exact path="/client/search" render={()=><Search/>}/>
 
           <Redirect to="/error" />
         </Switch>

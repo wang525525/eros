@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+
 import '../../App.css';
 import background from '../../assets/images/design/bg-escort.jpeg';
+import exitImg from '../../assets/images/resources/icon-exit.png';
+
 import Link from '@material-ui/core/Link';
 import Config from "../../helpers/config";
 import StateContext from '../../helpers/contextState'
@@ -22,6 +26,9 @@ function App() {
     nationality: "",
     gender: "",
   });
+
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
 
   const context = React.useContext(StateContext);
 
@@ -68,7 +75,11 @@ function App() {
     setGender(gender);
     setInputs(_inputs);
     if (url) {
-      window.location.href = Config.ConfigAppUrl + url;
+      if (url == 'exit') {
+        setModal(true);
+      } else {
+        window.location.href = Config.ConfigAppUrl + url;
+      }
     }
   }
 
@@ -121,6 +132,35 @@ function App() {
         </div>
       </form>
       <IconSlideDown clickHandler={clickHandler}></IconSlideDown>
+
+      {/* Modal START */}
+      <Modal isOpen={modal} toggle={toggle} className="modal-dialog-center" >
+        <ModalBody className="bg-gray rounded p-0">
+
+          <div className="row m-0">
+            <div className="col-sm-12 text-center p-3">
+              <div className="row justify-content-center">
+                <div className="col-8">
+                  <img src={exitImg} alt="confirm" className="w-100" />
+                </div>
+              </div>
+
+              <div className="pb-2 text-center">
+                <span className="text-morado fs-xxl font-weight-bold">
+                  ¿Quieres salir?
+                </span>
+              </div>
+              
+              <div className="d-flex">
+                <button className="btn btn-primary w-100 py-3 fs-l" onClick={clickHandler}>Si</button>
+              </div>
+
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>
+      {/* Modal  END */}
+      
     </div>
   )
 }

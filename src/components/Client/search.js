@@ -1,40 +1,27 @@
 import React, {useState} from 'react';
 import '../../App.css';
-import logo from '../../assets/images/resources/icono-reloj.png';
+
 import background from '../../assets/images/design/bg-erosapp-clientes.png';
 import girlImg from '../../assets/images/design/image-girl.jpg';
 
-import StateContext from '../../helpers/contextState'
 import Config from "../../helpers/config";
 
 import TopbarSimple from "./topbarSimple";
-import ProgressBar from "./progressBar";
-import { func } from 'prop-types';
 
 const divBackground = {
   backgroundImage: 'url(' + background + ')',
 };
 
 function App() {
-  const context               =   React.useContext(StateContext);
-
-  function gotoHotel(e) {
+  
+  function gotoSeeker(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/home';
+    window.location.href = Config.ConfigAppUrl + 'client/seeker';
   }
 
-  function gotoSubContact(e) {
-    e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/contact2';
-  }
-
-  function gotoNext(e) {
-    e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/contact3';
-  }
   return (
     <div>
-      <TopbarSimple clickHandler={gotoSubContact} name={'Contratar'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoSeeker} name={'Search'}></TopbarSimple>
       <div className="App-LogoCenter App-splash" style={divBackground}>
         
         <div className="App-form-register container">
@@ -53,7 +40,7 @@ function App() {
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
                   <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
                 </div>
               </div>
 
@@ -69,7 +56,7 @@ function App() {
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
                   <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
                 </div>
               </div>
 
@@ -85,13 +72,7 @@ function App() {
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
                   <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
-                </div>
-              </div>
-  
-              <div className="row justify-content-center mt-5">
-                <div className="col-sm-12">
-                  <ProgressBar curPoint={1}></ProgressBar>
+                  <button className="btn btn-primary w-50 ml-2">Acceptar</button>
                 </div>
               </div>
 

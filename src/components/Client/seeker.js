@@ -32,6 +32,11 @@ function App() {
     window.location.href = Config.ConfigAppUrl + 'client/home';
   }
 
+  function gotoSearch(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'client/search';
+  }
+
   return (
 
     <div>
@@ -47,7 +52,7 @@ function App() {
                   <div className="input-group mb-3">
                     
                     <input autoComplete="off" type="text" name="name" className="form-control" placeholder="¿Que deseas buscar?" required/>
-                    <div className="input-group-append bg-primary">
+                    <div className="input-group-append bg-primary" onClick={gotoSearch}>
                       <div className="my-auto px-2">
                         <i className="fas fa-search"></i>
                       </div>

@@ -27,7 +27,6 @@ const useStyles = makeStyles({
 });
 function App() {
   const classes = useStyles();
-  const context = React.useContext(StateContext);
 
   function gotoHotel(e) {
     e.preventDefault();
@@ -35,21 +34,10 @@ function App() {
   }
 
   function gotoNextStep(e) {
-    let modal = {
-      status:true,
-      title:"¡Registro con éxito!",
-      message:"¡ya puedes usar tu cuenta!",
-      ico:{
-            contentColor:"modal-ico-bg-primary",
-            ico:'fas fa-check pl-1',
-          },
-      customButtom:{
-        link:Config.ConfigAppUrl+"client/contact2",
-      }
-    }
-
-    context.setState({dialog:modal})
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl+"client/contact2";
   }
+
   return (
 
     <div>
