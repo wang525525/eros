@@ -12,7 +12,7 @@ function App(props) {
 
   function gotoBonus(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'escort/bonus';
+    window.location.href = Config.ConfigAppUrl + 'escort/refer';
   }
   
   return (

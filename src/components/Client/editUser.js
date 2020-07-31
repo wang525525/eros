@@ -7,25 +7,15 @@ function App() {
   const contents = [{
     label: "Hobbies & gustos"
   },{
-    label: "¿Qué días trabajo?"
-  },{
     label: "Edad y estatura"
   },{
     label: "Contextura"
   },{
     label: "Tono de piel"
   },{
-    label: "Estilo de cabello"
-  },{
     label: "Color de ojos"
   },{
     label: "Color de cabello"
-  },{
-    label: "Talla de senos"
-  },{
-    label: "Cirugías estéticas"
-  },{
-    label: "¿Bebes?"
   },{
     label: "¿Fumas?"
   }];

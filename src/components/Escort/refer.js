@@ -22,13 +22,13 @@ function App() {
 
   function gotoHome(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/setting';
+    window.location.href = Config.ConfigAppUrl + 'escort/home';
   }
 
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHome} name={'Bonos y referidos'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoHome} name={'Refiere y gana'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="container">

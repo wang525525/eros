@@ -5,7 +5,10 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import { makeStyles } from '@material-ui/core/styles';
 
 import background from '../../assets/images/design/bg-motel.png';
-import hotelImg from '../../assets/images/design/hotel.jpg';
+import girl1Img from '../../assets/images/design/girl1.jpeg';
+import girl2Img from '../../assets/images/design/girl2.jpg';
+import girl3Img from '../../assets/images/design/girl3.jpg';
+import girl4Img from '../../assets/images/design/girl4.jpg';
 import serviceImg from '../../assets/images/resources/icoon-service.png';
 import cameraImg from '../../assets/images/resources/icono-camera.png';
 import clientImg from '../../assets/images/resources/icono-cliente.png';
@@ -35,10 +38,10 @@ const divBackground = {
 };
 
 const images = [
-  hotelImg,
-  hotelImg,
-  hotelImg,
-  hotelImg
+  girl1Img,
+  girl2Img,
+  girl3Img,
+  girl4Img
 ];
 
 const useStyles = makeStyles({

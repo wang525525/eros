@@ -14,7 +14,6 @@ import TopbarSimple from "./topbarSimple";
 import Tabs from "../common/Tabs";
 import Tab from "../common/Tab";
 
-import EditService from "./editService";
 import EditUser from "./editUser";
 import EditCamera from "./editCamera";
 import EditCurrency from "./editCurrency";
@@ -41,16 +40,7 @@ function App() {
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-6">
               <Tabs>
-                <Tab active={true} value="service" header={
-                    <img src={serviceImg} className="img-icon-32" />
-                  }
-                >
-
-                  <EditService></EditService>
-
-                </Tab>
-
-                <Tab value="user" header={
+                <Tab active={true} value="user" header={
                     <img src={userImg} className="img-icon-32" />
                   }
                 >

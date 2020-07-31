@@ -15,6 +15,7 @@ import Chat from "./chat";
 import ServiceDuration from "./serviceDuration";
 import ServiceAddTime from "./serviceAddTime";
 import ServicePay from "./servicePay";
+import Refer from "./refer";
 
 class App extends React.Component {
 
@@ -45,6 +46,7 @@ class App extends React.Component {
           <Route exact path="/escort/serviceduration" render={()=><ServiceDuration/>}/>
           <Route exact path="/escort/serviceadd" render={()=><ServiceAddTime/>}/>
           <Route exact path="/escort/servicepay" render={()=><ServicePay/>}/>
+          <Route exact path="/escort/refer" render={()=><Refer/>}/>
 
           <Redirect to="/error" />
         </Switch>

@@ -16,9 +16,9 @@ function App() {
     window.location.href = Config.ConfigAppUrl + 'client/notification';
   }
   
-  function gotoBonus(e) {
+  function gotoRefer(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/bonus';
+    window.location.href = Config.ConfigAppUrl + 'client/refer';
   }
   return (
     
@@ -38,7 +38,7 @@ function App() {
                 </a>
               </div>
               <div className="d-flex ml-auto">
-                <a href="#" onClick={gotoBonus} className="text-white my-auto p-3">
+                <a href="#" onClick={gotoRefer} className="text-white my-auto p-3">
                   <i className="fa fa-tag"></i>
                 </a>
                 <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">

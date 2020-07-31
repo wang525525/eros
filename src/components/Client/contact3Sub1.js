@@ -104,7 +104,7 @@ function App() {
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
                   <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
-                    Retirar
+                    Recargar
                   </button>
                 </div>
               </div>
@@ -121,7 +121,7 @@ function App() {
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
                   <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
-                    Retirar
+                    Recargar
                   </button>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function App() {
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
                   <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
-                    Retirar
+                    Recargar
                   </button>
                 </div>
               </div>
@@ -155,7 +155,7 @@ function App() {
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
                   <button className="btn btn-primary text-white text-decoration-none" onClick={showModal}>
-                    Retirar
+                    Recargar
                   </button>
                 </div>
               </div>
@@ -173,27 +173,25 @@ function App() {
 
       {/* Modal START */}
       <Modal isOpen={modal} toggle={toggle} className="modal-dialog-center" >
-        <ModalBody className="bg-white rounded p-0">
+        <ModalBody className="bg-gray rounded p-0">
 
           <div className="row m-0">
             <div className="col-sm-12 text-center p-3">
-              <div className="row justify-content-center">
-                <div className="col-8">
-                  <img src={payImg} alt="confirm" className="w-100" />
-                </div>
-              </div>
 
               <div className="pb-2 text-center">
-                <span className="text-black fs-xxl font-weight-bolder">
-                  ¡Tu pago ha sido confirmado!
+                <span className="text-morado fs-xxl font-weight-bold">
+                  ¡Tu recarga ha sido exitosa!
                 </span>
               </div>
-              <div className="pb-2 text-center">
-                <span className="text-grey fs-xl">Ya puedes ponerte en contacto con <span className="text-pink">sexy20</span>, para concretar los detalles del servicio</span>
-              </div>
 
+              <div className="pb-2 text-center">
+                <span className="text-white fs-l font-weight-bold">
+                  Tu billetera ha sido cargada con <span className="text-pink">EC $1000</span>
+                </span>
+              </div>
+              
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoClient}>Continuar</button>
+                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoClient}>Acceptar</button>
               </div>
 
             </div>

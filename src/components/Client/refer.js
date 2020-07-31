@@ -20,15 +20,15 @@ const divBackground = {
 
 function App() {
 
-  function gotoHome(e) {
+  function gotoClient(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/setting';
+    window.location.href = Config.ConfigAppUrl + 'client/home';
   }
 
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHome} name={'Bonos y referidos'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoClient} name={'Refiere y gana'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="container">

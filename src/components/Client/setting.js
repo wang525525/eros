@@ -28,6 +28,9 @@ function App() {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
+  const [changeModal, setChangeModal] = useState(false);
+  const toggleChange = () => setChangeModal(!changeModal);
+
   function _setGender(gender, url) {
     let _inputs = inputs;
     _inputs.gender = gender;
@@ -45,6 +48,11 @@ function App() {
   function clickHandler(e) {
     e.preventDefault()
     window.location.href = Config.ConfigAppUrl + 'client/home';
+  }
+
+  function changeRole(e) {
+    e.preventDefault()
+    setChangeModal(true);
   }
 
   return (
@@ -91,8 +99,8 @@ function App() {
 
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
-              <button className="btn btn-primary w-100 py-2 fs-xl">
-                <i className="fas fa-user-friends"></i>
+              <button className="btn btn-primary w-100 py-2 fs-xl" onClick={changeRole}>
+                <i className="fas fa-user-friends pr-2"></i>
                 Cambiar a rol trabajador
               </button>
             </div>
@@ -122,6 +130,34 @@ function App() {
               
               <div className="d-flex">
                 <button className="btn btn-primary w-100 py-3 fs-l" onClick={clickHandler}>Si</button>
+              </div>
+
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>
+      {/* Modal  END */}
+
+      {/* Modal START */}
+      <Modal isOpen={changeModal} toggle={toggleChange} className="modal-dialog-center" >
+        <ModalBody className="bg-gray rounded p-0">
+
+          <div className="row m-0">
+            <div className="col-sm-12 text-center p-3">
+              <div className="row justify-content-center">
+                <div className="col-8">
+                  <img src={exitImg} alt="confirm" className="w-100" />
+                </div>
+              </div>
+
+              <div className="pb-2 text-center">
+                <span className="text-morado fs-xxl font-weight-bold">
+                  ¿Cambiar al rol de trabajador?
+                </span>
+              </div>
+              
+              <div className="d-flex">
+                <button className="btn btn-primary w-100 py-3 fs-l">Si</button>
               </div>
 
             </div>

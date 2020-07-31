@@ -20,6 +20,7 @@ import Exit from "./exit";
 import Notification from "./notification";
 import Search from "./search";
 import Details from "./details";
+import Refer from "./refer";
 
 
 class App extends React.Component {
@@ -55,6 +56,7 @@ class App extends React.Component {
           <Route exact path="/client/exit" render={()=><Exit/>}/>
           <Route exact path="/client/notification" render={()=><Notification/>}/>
           <Route exact path="/client/search" render={()=><Search/>}/>
+          <Route exact path="/client/refer" render={()=><Refer/>}/>
 
           <Redirect to="/error" />
         </Switch>
