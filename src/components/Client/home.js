@@ -254,11 +254,13 @@ function App() {
                 </Tabs>
               
                 <div className="d-flex p-2 background-text3">
-                  <div className="mr-auto">
+                  <div className="my-auto">
                     <div className="d-flex">
-                      <img src={girlImg} className="img-icon-32" />
-                      <span className="text-morado fs-n pl-2">Sexy 20, 29</span>
+                      <img src={girlImg} className="img-icon-48 rounded" />
+                      <span className="text-morado fs-xl pl-2">Sexy 20, 29</span>
                     </div>
+                  </div>
+                  <div className="m-auto">
                     <div className="d-flex">
                       <Rating 
                         name="read-only" 
