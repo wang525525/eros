@@ -21,6 +21,10 @@ import Notification from "./notification";
 import Search from "./search";
 import Details from "./details";
 import Refer from "./refer";
+import ServiceDuration from "./serviceDuration";
+import ServiceAddTime from "./serviceAddTime";
+import ServicePay from "./servicePay";
+import ServicePay2 from "./servicePay2";
 
 
 class App extends React.Component {
@@ -57,6 +61,10 @@ class App extends React.Component {
           <Route exact path="/client/notification" render={()=><Notification/>}/>
           <Route exact path="/client/search" render={()=><Search/>}/>
           <Route exact path="/client/refer" render={()=><Refer/>}/>
+          <Route exact path="/client/serviceduration" render={()=><ServiceDuration/>}/>
+          <Route exact path="/client/serviceadd" render={()=><ServiceAddTime/>}/>
+          <Route exact path="/client/servicepay" render={()=><ServicePay/>}/>
+          <Route exact path="/client/servicepay2" render={()=><ServicePay2/>}/>
 
           <Redirect to="/error" />
         </Switch>

@@ -45,12 +45,8 @@ function App() {
 
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-  const [step1Modal, setStep1Modal] = useState(false);
-  const toggleStep1 = () => setStep1Modal(!step1Modal);
   const [reviewModal, setReviewModal] = useState(false);
   const toggleReview = () => setReviewModal(!reviewModal);
-  const [payModal, setPayModal] = useState(false);
-  const togglePay = () => setPayModal(!payModal);
 
   function gotoEscort(e) {
     e.preventDefault();
@@ -94,30 +90,19 @@ function App() {
 
   function gotoHome(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'escort/home';
-  }
-
-  function gotoNextStep1(e) {
-    e.preventDefault();
-    setModal(false);
-    setStep1Modal(true);
+    window.location.href = Config.ConfigAppUrl + 'client/home';
   }
 
   function gotoReview(e) {
     e.preventDefault();
-    setStep1Modal(false);
+    setModal(false);
     setReviewModal(true)
   }
 
-  function gotoPay(e) {
+  function gotoAddTime(e) {
     e.preventDefault();
-    setStep1Modal(false);
-    setPayModal(true);
-  }
-
-  function gotoService(e) {
-    e.preventDefault();
-    setPayModal(false);
+    setModal(false);
+    window.location.href = Config.ConfigAppUrl + 'client/serviceadd';
   }
   return (
 
@@ -204,84 +189,16 @@ function App() {
                   ¡El servicio ha finalizado!
                 </span>
               </div>
+
+              <div className="pb-2 text-center">
+                <span className="text-morado fs-xxl font-weight-bolder">
+                  ¿Quieres Adicionar tiempo?
+                </span>
+              </div>
               
               <div className="d-flex pt-3">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoNextStep1}>OK</button>
-              </div>
-
-            </div>
-          </div>
-        </ModalBody>
-      </Modal>
-      {/* Modal  END */}
-
-      {/* Notifcation Modal START */}
-      <Modal isOpen={step1Modal} toggle={toggleStep1} className="modal-dialog-center" >
-        <ModalBody className="bg-gray rounded p-0">
-
-          <div className="row m-0">
-            <div className="col-sm-12 text-center p-3">
-              <div className="d-flex pb-2">
-                <img src={clientImg} alt="P" className="img-icon-80 rounded-circle p-0" />
-                <div className="badge-img">
-                  <img src={minsBadgeImg} alt="mins" className="rounded-circle" />
-                </div>
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-morado fs-xxl font-weight-bolder">Lucho$</span>
-              </div>
-              <div className="pb-2 text-center">
-                <span className="text-white fs-xl">30 anos</span>
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-white fs-xl">¡Quiere <span className="text-morado">45 minutos</span> mas contigo!</span>
-              </div>
-
-            </div>
-          </div>
-
-          <div className="d-flex">
-            <button className="btn btn-secondary w-50 py-3 fs-l" onClick={gotoReview}>Rechazar</button>
-            <button className="btn btn-primary w-50 py-3 fs-l" onClick={gotoPay}>Aceptar</button>
-          </div>
-
-        </ModalBody>
-      </Modal>
-      {/* Notifcation Modal  END */}
-
-      {/* Modal START pay modal */}
-      <Modal isOpen={payModal} toggle={togglePay} className="modal-dialog-center" >
-        <ModalBody className="bg-gray rounded p-0">
-
-          <div className="row m-0">
-            <div className="col-sm-12 text-center p-3">
-              <div className="d-flex pb-2">
-                <img src={clientImg} alt="P" className="img-icon-80 rounded-circle p-0" />
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-morado fs-xxl font-weight-bolder">Lucho$</span>
-              </div>
-              <div className="pb-2 text-center">
-                <span className="text-white fs-xl">30 anos</span>
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-white fs-xl">¿Confirmas que has recibido el pago en efectivo?</span>
-              </div>
-
-              <div className="App-form-register pb-2 text-center">
-                <div className="input-group p-3 rounded">
-                  <i className="fas fa-money-bill-alt text-gray mr-2 my-auto fs-xl"></i>
-                  <span className="ml-auto text-morado fs-l">COP $75,000</span>
-                </div>
-              </div>
-
-              <div className="d-flex">
-                <button className="btn btn-secondary w-50 py-3 fs-l mr-2" onClick={togglePay}>No</button>
-                <button className="btn btn-primary w-50 py-3 fs-l ml-2" onClick={gotoService}>Si</button>
+                <button className="btn btn-secondary w-50 py-3 mr-2 fs-l" onClick={gotoReview}>No, terminar</button>
+                <button className="btn btn-primary w-50 py-3 ml-2 fs-l" onClick={gotoAddTime}>Si</button>
               </div>
 
             </div>

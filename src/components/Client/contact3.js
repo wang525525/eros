@@ -49,9 +49,9 @@ function App() {
     setModal(true);
   }
 
-  function gotoClient(e) {
+  function gotoService(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/home';
+    window.location.href = Config.ConfigAppUrl + 'client/serviceduration';
   }
 
   return (
@@ -205,7 +205,7 @@ function App() {
               </div>
 
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoClient}>Continuar</button>
+                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoService}>Continuar</button>
               </div>
 
             </div>
