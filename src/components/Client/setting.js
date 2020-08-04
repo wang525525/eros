@@ -58,9 +58,9 @@ function App() {
   return (
     <div className="App-LogoCenter App-splash" style={divBackground}>
       <form className="App-form App-form-register">
-        <div className="container">
+        <div className="container p-4">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
 
               <div className="d-flex background-text p-2">
                 <img src={clientImg} alt="P" className="img-icon-54" />
@@ -92,13 +92,13 @@ function App() {
           </div>
 
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
               <SettingsContent gender={gender} setGender={_setGender} />
             </div>
           </div>
 
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
               <button className="btn btn-primary w-100 py-2 fs-xl" onClick={changeRole}>
                 <i className="fas fa-user-friends pr-2"></i>
                 Cambiar a rol trabajador

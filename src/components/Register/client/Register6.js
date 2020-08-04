@@ -130,7 +130,7 @@ function App() {
       <form className="App-form App-form-register">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-8 text-center mt-5">
@@ -146,7 +146,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-2">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="h6">
                 ¡Tranquil@, tu información es confidencial!
                 <br/>
@@ -155,12 +155,12 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-2 mb-4">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="App-Question--x2 text-center">Adjunta tu documento de identidad</div>
             </div>
           </div>
           <div className="row justify-content-center mt-3">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="input-group mb-3">
                   <select className="form-control" name="type_identity_document" onChange={handleChange} defaultValue={client.type_identity_document}>
                     <option>Seleccione el tipo de documento</option>
@@ -173,7 +173,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center">
                 <div className="col-6 col-sm-6 mb-4 text-center">
                   <div className="btn btn-secondary text-white p-0 position-relative upload">
@@ -191,7 +191,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-md-center mt-1">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-centerr">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-centerr">
               <Link onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" href={Config.ConfigAppUrl+"Auth/Login"} >
                 Finalizar
               </Link>

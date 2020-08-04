@@ -103,7 +103,7 @@ function App() {
       <form className="App-form App-form-register">
         <div className="container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className=" App-Question background-text leter p-2 ">
                 <img src={girlImg} className="img-icon-48 rounded mr-2" />
                 Sexy20
@@ -131,7 +131,7 @@ function App() {
           </div>
 
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
               <SettingsContent gender={gender} setGender={_setGender} />
             </div>
           </div>

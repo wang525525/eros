@@ -90,7 +90,7 @@ function App() {
       <form className="App-form App-form-register">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-8 text-center mt-5">
@@ -101,7 +101,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-4 mb-1">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="row justify-content-center mt-4 mb-1">
                 <div className="col-6 col-sm-6">
                   <div className="btn btn-secondary text-white p-0 position-relative upload">
@@ -120,17 +120,17 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-4 mb-1">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="App-Question text-center">¡Así te verán!</div>
             </div>
           </div>
           <div className="row justify-content-center mt-0">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="text-gray mb-2"> Formatos JPG y PNG</div>
             </div>
           </div>
           <div className="row justify-content-md-center mt-1 mb-4">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <Link onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" >
                 Continuar
               </Link>

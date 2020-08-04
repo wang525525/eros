@@ -39,7 +39,7 @@ function App() {
         
         <div className="App-form-register container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
   
               <div className="row justify-content-center background-gray m-2 p-3 rounded">
                 <div className="col-sm-12 rounded d-flex">

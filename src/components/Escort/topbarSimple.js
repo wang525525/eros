@@ -9,7 +9,7 @@ function App(props) {
     <nav className="navbar fixed-top navbar-light bg-transparent">
       <div className="container">
         <div className="row flex-fill justify-content-center">
-          <div className="col-sm-12 col-md-8 col-lg-6">
+          <div className="col-sm-12 col-md-8 col-lg-7">
             <div className="d-flex fs-xl">
               <div className="d-flex">
                 <a href="#" className="d-flex text-decoration-none text-white" onClick={props.clickHandler}>

@@ -54,7 +54,7 @@ function App() {
 
         <div className="container">
           <div className="row justify-content-center set_width_container mt-3 m-0">
-            <div className="col-sm-12 col-md-8 col-lg-6 p-0">
+            <div className="col-sm-12 col-md-8 col-lg-7 p-0">
               <LazyImageProvider>
                 <Carousel>
                   {images.map((image, i) => (
@@ -66,7 +66,7 @@ function App() {
           </div>
 
           <div className="row justify-content-center m-0">
-            <div className="col-sm-12 col-md-8 col-lg-6 px-0 background-gray">
+            <div className="col-sm-12 col-md-8 col-lg-7 px-0 background-gray">
               <div className="row mt-n-1">
                 <div className="col-3 text-center">
                   <img className="img-fluid img-icon-62 rounded" src={logo} alt="ErosApp"/>
@@ -116,7 +116,7 @@ function App() {
           </div>
 
           <div className="row justify-content-center set_width_container m-0">
-            <div className="col-sm-12 col-md-8 col-lg-6 p-0 background-text4 fs-l">
+            <div className="col-sm-12 col-md-8 col-lg-7 p-0 background-text4 fs-l">
               <Tabs>
                 <Tab active={true} value="contact" header="Contacto">
                   <div className="row">

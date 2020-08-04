@@ -90,7 +90,7 @@ function App() {
       <form className="App-form App-form-register">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center mt-4">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center mt-4">
               <div className="row justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-8 text-center mt-5">
@@ -101,12 +101,12 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center mt-4">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="App-Question text-center">Costo de alojamiento</div>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center mt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center mt-3">
               <div className="input-group mb-3">
                 <div className="input-group-prepend ">
                   <span className="input-group-text">
@@ -196,7 +196,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-md-center mt-1">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center mb-4">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center mb-4">
               <Link onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" >
                 Continuar
               </Link>

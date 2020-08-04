@@ -25,7 +25,7 @@ function App() {
     <nav className="navbar fixed-top navbar-light bg-transparent">
       <div className="container">
         <div className="row flex-fill justify-content-center">
-          <div className="col-sm-12 col-md-8 col-lg-6">
+          <div className="col-sm-12 col-md-8 col-lg-7">
             <div className="d-flex fs-xl">
               <div className="d-flex mr-auto">
                 <a href="#" onClick={gotoSeeker} className="text-white my-auto p-3">

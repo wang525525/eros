@@ -112,7 +112,7 @@ function App() {
 
         <div className="container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center set_width_container">
                 <div className="col-8 mt-5">
                   <CircularProgressbarWithChildren 

@@ -20,7 +20,7 @@ function App(props) {
     <nav className="navbar fixed-top navbar-light bg-transparent">
       <div className="container">
         <div className="row flex-fill justify-content-center">
-          <div className="col-sm-12 col-md-8 col-lg-6">
+          <div className="col-sm-12 col-md-8 col-lg-7">
             <div className="d-flex">
               <div className="d-flex ml-auto">
                 <a href="#" onClick={gotoBonus} className="text-white my-auto p-3">

@@ -37,7 +37,7 @@ function App() {
 
       <div className="container">
         <div className="row justify-content-center set_width_container">
-          <div className="col-sm-12 col-md-8 col-lg-6">
+          <div className="col-sm-12 col-md-8 col-lg-7">
 
             <div className="d-flex background-text p-2">
               <img src={defaultMan} alt="P" className="img-icon-48 rounded mr-2 my-auto" />
@@ -63,7 +63,7 @@ function App() {
         </div>
 
         <div className="row justify-content-center set_width_container">
-          <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+          <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
             <div className="d-flex">
               <h4 className="text-morado">Detalles del servicio</h4>
             </div>

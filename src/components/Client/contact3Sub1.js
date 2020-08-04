@@ -47,7 +47,7 @@ function App() {
 
         <div className="App-form-secondary container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6 pt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
 
               <div className="row justify-content-center">
                 <div className="col-4 text-center mt-5">

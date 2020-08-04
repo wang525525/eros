@@ -33,7 +33,7 @@ function App() {
 
         <div className="container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6 fs-xl">
+            <div className="col-sm-12 col-md-8 col-lg-7 fs-xl">
 
               <div className="row justify-content-center">
                 <div className="col-6 col-sm-6 text-center mt-5">

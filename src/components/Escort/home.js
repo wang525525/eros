@@ -71,7 +71,7 @@ function App() {
 
         <div className="container mt-auto">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center">
                 <div className="col-7 col-sm-4 text-center">
                   <img className="img-fluid" src={logo} alt="ErosApp"/>
@@ -83,7 +83,7 @@ function App() {
 
         <div className="container mt-auto pb-5">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-6">
+            <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="d-flex border-b pb-2">
                 <img src={moneda} alt="P" className="img-icon-54" />
                 <div className="pl-3">

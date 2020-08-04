@@ -106,12 +106,12 @@ function App() {
       <form className="App-form App-form-register">
         <div className="container">
           <div className="row justify-content-center mt-4">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-center">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-center">
               <div className="App-Question text-center">¿Dónde deseo recibir el pago?</div>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6 mt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 mt-3">
               <Accounts
                 setState={KeyUp}
                 store="hotel"
@@ -124,7 +124,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6 mt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 mt-3">
               <Accounts
                 setState={KeyUp}
                 store="hotel"
@@ -137,7 +137,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-8 col-lg-6 mt-3">
+            <div className="col-sm-12 col-md-8 col-lg-7 mt-3">
               <Accounts
                 setState={KeyUp}
                 store="hotel"
@@ -150,7 +150,7 @@ function App() {
             </div>
           </div>
           <div className="row justify-content-md-center mt-3">
-            <div className="col-sm-12 col-md-8 col-lg-6 text-centerr">
+            <div className="col-sm-12 col-md-8 col-lg-7 text-centerr">
               <div onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" href={Config.ConfigAppUrl+"Auth/HotelRegister5"} >
                 Finalizar
               </div>
