@@ -11,6 +11,8 @@ import Chat from "./chat";
 import About from "./about";
 import Exit from "./exit";
 import Sencilla from "./sencilla";
+import Refer from "./refer";
+import Notification from "./notification";
 
 class App extends React.Component {
 
@@ -35,6 +37,8 @@ class App extends React.Component {
           <Route exact path="/hotel/about" render={()=><About/>}/>
           <Route exact path="/hotel/exit" render={()=><Exit/>}/>
           <Route exact path="/hotel/sencilla" render={()=><Sencilla/>}/>
+          <Route exact path="/hotel/refer" render={()=><Refer/>}/>
+          <Route exact path="/hotel/notification" render={()=><Notification/>}/>
 
           <Redirect to="/error" />
         </Switch>

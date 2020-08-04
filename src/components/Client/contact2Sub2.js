@@ -18,7 +18,7 @@ const divBackground = {
 function App() {
   const context               =   React.useContext(StateContext);
 
-  function gotoHotel(e) {
+  function gotoHome(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/home';
   }
@@ -52,7 +52,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
+                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
@@ -68,7 +68,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
+                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
@@ -84,7 +84,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2">Rechazar</button>
+                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>

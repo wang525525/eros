@@ -19,7 +19,7 @@ function App(props) {
     ico: setting,
     url: "hotel/config"
   }, {
-    label: "Historial de pagos y servicios",
+    label: "Historial de reservas",
     ico: money,
     url: "hotel/hist"
   }, {

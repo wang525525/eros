@@ -14,6 +14,10 @@ import Config from "../../helpers/config";
 import Carousel from "../common/Carousel/Carousel";
 import { LazyImageProvider } from "../common/LazyImage/LazyImageContext";
 import LazyImage from "../common/LazyImage/LazyImage";
+import man1Img from '../../assets/images/design/man1.jpg';
+import man2Img from '../../assets/images/design/man2.jpg';
+import man3Img from '../../assets/images/design/man3.jpg';
+import man4Img from '../../assets/images/design/man4.jpg';
 
 import TopbarSimple from "./topbarSimple";
 import Tabs from "../common/Tabs";
@@ -24,10 +28,10 @@ const divBackground = {
 };
 
 const images = [
-  hotelImg,
-  hotelImg,
-  hotelImg,
-  hotelImg
+  man1Img,
+  man2Img,
+  man3Img,
+  man4Img
 ];
 
 
@@ -69,10 +73,10 @@ function App() {
             <div className="col-sm-12 col-md-8 col-lg-7 px-0 background-gray">
               <div className="row mt-n-1">
                 <div className="col-3 text-center">
-                  <img className="img-fluid img-icon-62 rounded" src={logo} alt="ErosApp"/>
+                  <img className="img-fluid img-icon-62 rounded" src={man1Img} alt="ErosApp"/>
                 </div>
                 <div className="col-5 mt-auto">
-                  <div className="App-Question font-weight-bolder fs-xl text-center">Hotel Los Rios</div>
+                  <div className="App-Question font-weight-bolder fs-xl text-center">Lucho$</div>
                 </div>
                 <div className="col-4 text-center mt-auto">
                   <Rating 
@@ -129,16 +133,6 @@ function App() {
                     </div>
                   </div>
                   
-                  <div className="row">
-                    <div className="col-7">
-                      <i className="fas fa-directions text-pink pr-3"></i>
-                      <span className="text-morado">Dirección</span>
-                    </div>
-                    <div className="col-5 text-right">
-                      <span>Cra 40 # 10-10</span>
-                    </div>
-                  </div>
-
                   <div className="row">
                     <div className="col-7">
                       <i className="fas fa-parking text-pink pr-3"></i>

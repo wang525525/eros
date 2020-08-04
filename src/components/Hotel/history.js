@@ -29,6 +29,7 @@ function App() {
     head: {
       backgroundColor: '#171715',
       color: '#FE2D66',
+      fontSize: '1.25rem'
     },
     body: {
       fontSize: 14,
@@ -90,24 +91,24 @@ function App() {
                           <StyledTableRow key={i}>
                             <StyledTableCell scope="row" align="center">
                               <div className="text-center">
-                                <img src={row.img} className="img-icon-32" />
+                                <img src={row.img} className="img-icon-48 rounded" />
                               </div>
                               <div className="text-center pt-2">
-                                <span className="text-morado">{row.name}</span>
+                                <span className="text-morado fs-l">{row.name}</span>
                               </div>
                             </StyledTableCell>
                             <StyledTableCell scope="row" align="center">
                               <div className="text-center">
-                                <span className="text-morado">{row.date}</span>
+                                <span className="text-morado fs-l">{row.date}</span>
                               </div>
                               <div className="text-center">
-                                <span className="pt-2">{row.time}</span>
+                                <span className="pt-2 fs-l">{row.time}</span>
                               </div>
                             </StyledTableCell>
                               
                             <StyledTableCell align="center">
                               <div className="text-center">
-                                <span className="">{row.habit}</span>
+                                <span className="fs-l">{row.habit}</span>
                               </div>
                             </StyledTableCell>
                           </StyledTableRow>

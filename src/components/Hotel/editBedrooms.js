@@ -38,7 +38,7 @@ function App() {
                 </button>
               </div>
               <div className="col-6 text-center mt-3">
-                <button className="btn btn-primary px-4 py-2">
+                <button className="btn btn-primary px-4 py-2" onClick={gotoSencilla}>
                   <i className="fas fa-plus pr-2"></i>
                   Agregar
                 </button>
@@ -50,7 +50,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor">
                       Sencilla
                     </div>
                   </div>
@@ -69,7 +69,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor">
                       Sencilla
                     </div>
                   </div>
@@ -88,7 +88,7 @@ function App() {
                 <div className="d-flex pt-3">
                   <i className="far fa-circle my-auto"></i>
                   <div className="pl-3 my-auto">
-                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor" onClick={gotoSencilla}>
+                    <div className="text-left App-Question--x2 tamano-texto-interno2 cursor">
                       Sencilla
                     </div>
                   </div>
