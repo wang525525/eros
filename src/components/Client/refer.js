@@ -51,7 +51,7 @@ function App() {
 
               <div className="row justify-content-center mt-3">
                 <div className="col-12 col-sm-12 text-center">
-                  <div className="fs-n text-center">
+                  <div className="fs-xl text-center">
                     ¡Gana el 10% del primer servicio que preste o tome tu referido!
                   </div>
                 </div>

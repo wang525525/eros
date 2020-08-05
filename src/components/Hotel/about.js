@@ -93,7 +93,7 @@ function App() {
                   <div className="App-Question--x2 d-flex justify-content-center">
                     <i className="fas fa-moon fs-xl text-pink pr-2 my-auto"></i>
                     <div className="">
-                      <span className="d-flex text-morado">Costo po hora</span>
+                      <span className="d-flex text-morado">Costo por hora</span>
                       <span className="text-white">$40,000</span>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ function App() {
                   <div className="App-Question--x2 d-flex justify-content-center">
                     <i className="far fa-clock fs-xl text-pink pr-2 my-auto"></i>
                     <div className="">
-                      <span className="d-flex text-morado">Costo po noche</span>
+                      <span className="d-flex text-morado">Costo por noche</span>
                       <span className="text-white">$40,000</span>
                     </div>
                   </div>
