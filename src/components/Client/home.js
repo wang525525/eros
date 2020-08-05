@@ -32,6 +32,7 @@ import Topbar from "./topbar";
 import IconSlideUp from "../common/IconSlideUp";
 import Tabs from "../common/Tabs";
 import Tab from "../common/Tab";
+import ItemsDinamics from "./ItemsDinamics";
 
 const divBackground = {
   backgroundImage: 'url(' + background + ')',
@@ -50,8 +51,23 @@ const useStyles = makeStyles({
   }
 });
 
+const  inputsDefault  = {
+  cirugias:{
+    "Bailar":true,
+    "Cine":true,
+    "Gimnasio":false,
+    "Viajar":false,
+    "Surf":false,
+    "Videojuegos":true,
+    "Concierto":true,
+    "Paracaidismo":true,
+    "Perforaciones":true,
+  }
+}
+
 function App() {
   const classes = useStyles();
+  const [inputs, setInputs] =   useState(inputsDefault);
 
   function clickHandler(e) {
     e.preventDefault()
@@ -240,11 +256,18 @@ function App() {
                         </div>
                       </div>
                       <div className="row justify-content-center pt-3">
-                        <div className="col-6">
+                        <div className="col-5">
                           <span className="text-morado">Hobbies & Gustos:</span>  
                         </div>
-                        <div className="col-6 text-right">
-                          <span className="text-grey">Bailar, Cine, Gimnasio, Viajar, Surf, Videojuegos, Concierto, Paracaidismo, Perforaciones</span>  
+                        <div className="col-7 text-right">
+                          <ItemsDinamics
+                            name="cirugias"
+                            inputs={inputs}
+                            setInputs={setInputs}
+                            boolTitle={false}
+                            boolNew={false}
+                            title="Agregar más cirugías"
+                            itemsDefault={inputsDefault.cirugias}/>
                         </div>
                       </div>
 
