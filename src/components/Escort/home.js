@@ -211,7 +211,7 @@ function App() {
                   <div className="text-left text-morado fs-xl font-weight-bold">
                     Sexy20
                   </div>
-                  <div className="text-left text-white fs-n">
+                  <div className="text-left text-white fs-l">
                     26 anos
                   </div>
                 </div>

@@ -14,10 +14,13 @@ const divBackground = {
 
 const  inputsDefault  = {
   cirugias:{
-    "Senos":false,
-    "Cola":false,
-    "Lipoescultura":false,
-    "Bichectomia":false,
+    "Ventilador":true,
+    "Minicomponente":true,
+    "TV Satelital":false,
+    "Máquina del amor":false,
+    "Aqua caliente":false,
+    "Jacuzzi":true,
+    "Turco":true,
   }
 }
 
@@ -28,6 +31,11 @@ function App() {
   function gotoHotel(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'hotel/setting';
+  }
+
+  function gotoEdit(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'hotel/edit';
   }
 
   return (
@@ -126,7 +134,7 @@ function App() {
                   </button>
                 </div>
                 <div className="col-6 text-center mt-3">
-                  <button className="btn btn-primary w-100 py-3">
+                  <button className="btn btn-primary w-100 py-3" onClick={gotoEdit}>
                     Guardar
                   </button>
                 </div>

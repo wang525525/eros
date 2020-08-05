@@ -26,7 +26,7 @@ function App() {
 
   function gotoPrev(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/servicepay';
+    window.location.href = Config.ConfigAppUrl + 'client/serviceadd';
   }
 
   function payService(e) {

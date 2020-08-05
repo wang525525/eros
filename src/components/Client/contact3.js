@@ -66,7 +66,7 @@ function App() {
 
               <div className="row justify-content-center mt-2">
                 <div className="col-sm-12 text-center">
-                  <img src={girlImg} className="img-icon-80 rounded" />
+                  <img src={girlImg} className="img-icon-140 rounded" />
                 </div>
                 <div className="col-sm-12 text-center">
                   <span className="text-morado fs-xl">Sexy20, 29</span>
@@ -91,15 +91,6 @@ function App() {
                     COP $50.000
                   </div>
                 </div>
-                <div className="ml-auto mt-auto mb-auto">
-                  <div className="btn btn-primary text-white text-decoration-none">
-                    Retirar
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex border-b pt-2">
-                <button class="btn btn-primary w-100 py-3 fs-l mb-3" onClick={gotoNext}>Recarga tu saldo</button>
               </div>
 
               <div className="pt-2">

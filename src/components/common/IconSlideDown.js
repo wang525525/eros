@@ -8,7 +8,7 @@ function App(props) {
 
     <div className="fixed-bottom d-flex justify-content-center">
       <a href="#" className="img-top-radius" onClick={props.clickHandler}>
-        <img src={iconSlideDown} alt="P" className="img-icon-54" />
+        <img src={iconSlideDown} alt="P" className="img-icon-48" />
       </a>
     </div>
     

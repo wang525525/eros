@@ -60,6 +60,11 @@ function App() {
     setModal(true);
   }
 
+  function gotoNotification(e) {
+    e.preventDefault();
+    window.location.href = Config.ConfigAppUrl + 'hotel/notification';
+  }
+
   return (
     <div>
       <Topbar showNotificationModal={showNotificationModal}></Topbar>
@@ -202,7 +207,7 @@ function App() {
                   <button className="btn btn-secondary mr-2">Presidencial</button>
                 </div>
               
-                <button className="btn btn-primary w-100 py-3 mt-4 mb-4">Reservar</button>
+                <button className="btn btn-primary w-100 py-3 mt-4 mb-4" onClick={gotoNotification}>Reservar</button>
               </div>
             </div>
 

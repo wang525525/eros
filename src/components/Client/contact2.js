@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../App.css';
-import logo from '../../assets/images/resources/icono-reloj.png';
+import radarImg from '../../assets/images/resources/radar.png';
 import background from '../../assets/images/design/bg-erosapp-clientes.png';
 import confirmImg from '../../assets/images/resources/confirm-icon.png';
 
@@ -45,8 +45,8 @@ function App() {
   
               <div className="row justify-content-center mt-4 px-4">
                 <div className="col-sm-12  background-gray rounded d-flex">
-                  <i className="far fa-clock fs-xl text-morado my-auto"></i>
-                  <div className="text-gray pl-2 fs-n">
+                  <i className="far fa-clock fs-xxl text-morado my-auto"></i>
+                  <div className="text-gray pl-2 fs-l">
                     El prestador de servicio tendrá un limite de <span className="text-fucsia cursor" onClick={showModal}>10 minutos&nbsp;</span> 
                     para aceptar o rechazar tu solicitud. Te notificaremos su respuesta
                   </div>
@@ -55,16 +55,8 @@ function App() {
   
               <div className="row justify-content-center">
                 <div className="row justify-content-center">
-                  <div className="col-6 col-sm-5 text-center mt-4">
-                    <img className="img-fluid" src={logo} alt="ErosApp"/>
-                  </div>
-                </div>
-              </div>
-  
-              <div className="row justify-content-center mt-4 ">
-                <div className="col-11 col-sm-8  ">
-                  <div className=" text-center p-2 text-white fs-xxl ">
-                    10:00
+                  <div className="col-12 text-center mt-4">
+                    <img className="img-fluid" src={radarImg} alt="ErosApp"/>
                   </div>
                 </div>
               </div>
@@ -72,7 +64,7 @@ function App() {
               <div className="row justify-content-center mt-4 ">
                 <div className="col-12 col-sm-8  ">
                   <div className=" text-center p-2 text-fuchsia ">
-                    Esperando la confirmación del servicio
+                    Buscando service
                   </div>
                 </div>
               </div>

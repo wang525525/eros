@@ -23,7 +23,7 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoClient} name={'Notification'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoClient} name={'Notificacion'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="App-form-secondary container">
@@ -62,7 +62,7 @@ function App() {
 
               <div className="row justify-content-center mt-5 ">
                 <div className="col-12">
-                  <div className="leter text-left  text-fucsia background-text3 p-2 ">Hoy</div>
+                  <div className="leter text-left  text-fucsia background-text3 p-2 ">Ayer</div>
                 </div>
               </div>
 

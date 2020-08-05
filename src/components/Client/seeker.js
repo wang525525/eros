@@ -5,6 +5,7 @@ import background from '../../assets/images/design/bg-escort.jpeg';
 import serviceImg from '../../assets/images/resources/icono-services.png';
 import moneyImg from '../../assets/images/resources/icono-money.png';
 import settingImg from '../../assets/images/resources/icon-setting.png';
+import genderImg from '../../assets/images/resources/icon-gender.png';
 
 import Config from "../../helpers/config";
 
@@ -27,7 +28,7 @@ function App() {
 
   const [inputs, setInputs] =   useState(inputsDefault);
 
-  function gotoHotel(e) {
+  function gotoHome(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'client/home';
   }
@@ -40,7 +41,7 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHotel} name={'Buscador'}></TopbarSimple>
+      <TopbarSimple clickHandler={gotoHome} name={'Buscador'}></TopbarSimple>
       <div className="App-Logo App-splash" style={divBackground}>
 
         <div className="App-form-secondary container">
@@ -52,7 +53,7 @@ function App() {
                   <div className="input-group mb-3">
                     
                     <input autoComplete="off" type="text" name="name" className="form-control" placeholder="¿Que deseas buscar?" required/>
-                    <div className="input-group-append bg-primary" onClick={gotoSearch}>
+                    <div className="input-group-append bg-primary" onClick={gotoHome}>
                       <div className="my-auto px-2">
                         <i className="fas fa-search"></i>
                       </div>
@@ -110,6 +111,28 @@ function App() {
               <div className="row justify-content-center mt-2">
                 <div className="col-sm-12">
                   <div className="App-Question--x2">
+                    <img src={genderImg} className="img-icon-32 mr-2" />
+                    Género:
+                  </div>
+                </div>
+              </div>
+              <div className="row justify-content-center mt-2 m-0">
+                <div className="col-sm-12 p-0 border-b">
+                  <div className="input-group mb-3">
+                    <select className="form-control" name="gender">
+                      <option value="Mujeres">Mujeres</option>
+                      <option value="Hombre">Hombre</option>
+                      <option value="Lesbiana">Lesbiana</option>
+                      <option value="Gay">Gay</option>
+                      <option value="Trans">Trans</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row justify-content-center mt-2">
+                <div className="col-sm-12">
+                  <div className="App-Question--x2">
                     <img src={settingImg} className="img-icon-32 mr-2" />
                     Busqueda avanzada
                   </div>
@@ -147,15 +170,12 @@ function App() {
               <div className="row justify-content-center mt-2">
                 <div className="col-6">
                   <div className="App-Question--x2">
-                    Género:
+                    Estilo de pelo:
                   </div>
                   <div className="input-group mb-3">
                     <select className="form-control" name="gender">
-                      <option value="Mujeres">Mujeres</option>
-                      <option value="Hombre">Hombre</option>
-                      <option value="Lesbiana">Lesbiana</option>
-                      <option value="Gay">Gay</option>
-                      <option value="Trans">Trans</option>
+                      <option value="larga">larga</option>
+                      <option value="corta">corta</option>
                     </select>
                   </div>
                 </div>

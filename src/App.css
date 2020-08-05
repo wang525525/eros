@@ -747,6 +747,10 @@ label {
   width: 25px;
   height: 17px;
 }
+.img-icon-140 {
+  width: 140px;
+  height: 140px;
+}
 .img-icon-100 {
   width: 100px;
   height: 100px;
@@ -795,7 +799,7 @@ label {
 /* Image Border START */
 .img-top-radius {
   background: #fff;
-  width: 100px;
+  width: 80px;
   text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -867,7 +871,7 @@ label {
   list-style-type: none;
   width: 25%;
   float: left;
-  font-size: 1rem;
+  font-size: 1.25rem;
   position: relative;
   text-align: center;
   color: #FE2D66;

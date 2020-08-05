@@ -58,9 +58,9 @@ function App() {
     window.location.href = Config.ConfigAppUrl + 'client/setting';
   }
 
-  function gotoContact(e) {
+  function gotoPay(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/contact';
+    window.location.href = Config.ConfigAppUrl + 'client/contact3';
   }
 
   return (
@@ -271,7 +271,7 @@ function App() {
                     </div>
                   </div>
                   <div className="ml-auto my-auto">
-                    <button className="btn btn-primary px-3 py-2" onClick={gotoContact}>CONTRATAR</button>
+                    <button className="btn btn-primary px-3 py-2" onClick={gotoPay}>Pagar</button>
                   </div>
 
                 </div>

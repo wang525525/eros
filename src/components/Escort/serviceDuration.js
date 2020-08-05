@@ -297,7 +297,7 @@ function App() {
           <div className="row m-0">
             <div className="col-sm-12 text-center p-3">
               <div className="d-flex pb-2">
-                <img src={girlImg} alt="P" className="img-icon-80 rounded-circle p-0" />
+                <img src={clientImg} alt="P" className="img-icon-80 rounded-circle p-0" />
               </div>
 
               <div className="pb-2 text-center">

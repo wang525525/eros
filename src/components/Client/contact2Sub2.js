@@ -18,9 +18,9 @@ const divBackground = {
 function App() {
   const context               =   React.useContext(StateContext);
 
-  function gotoHome(e) {
+  function gotoPayHome(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'client/home';
+    window.location.href = Config.ConfigAppUrl + 'client/contact2sub3';
   }
 
   function gotoSubContact(e) {
@@ -46,13 +46,12 @@ function App() {
                   <div className="d-flex my-auto">
                     <img src={girlImg} className="img-icon-48 rounded mr-2" />
                   </div>
-                  <div className="fs-l">
+                  <div className="fs-l mt-1">
                     <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
@@ -62,13 +61,12 @@ function App() {
                   <div className="d-flex my-auto">
                     <img src={girlImg} className="img-icon-48 rounded mr-2" />
                   </div>
-                  <div className="fs-l">
+                  <div className="fs-l mt-1">
                     <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
@@ -78,13 +76,12 @@ function App() {
                   <div className="d-flex my-auto">
                     <img src={girlImg} className="img-icon-48 rounded mr-2" />
                   </div>
-                  <div className="fs-l">
+                  <div className="fs-l mt-1">
                     <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                    <span className="d-flex text-pink">Ver perfil</span>
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-secondary w-50 mr-2" onClick={gotoHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
                   <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>

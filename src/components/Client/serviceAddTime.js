@@ -26,8 +26,6 @@ function App() {
 
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-  const [checkModal, setCheckModal] = useState(false);
-  const toggleCheck = () => setCheckModal(!checkModal);
 
   function gotoServiceAddTime(e) {
     e.preventDefault();
@@ -39,16 +37,10 @@ function App() {
     setModal(true);
   }
 
-  function gotoCheck(e) {
-    e.preventDefault();
-    setModal(false);
-    setCheckModal(true);
-  }
-
   function gotoPay(e) {
     e.preventDefault();
-    setCheckModal(false);
-    window.location.href = Config.ConfigAppUrl + 'client/servicepay';
+    setModal(false);
+    window.location.href = Config.ConfigAppUrl + 'client/servicepay2';
   }
 
   return (
@@ -152,55 +144,17 @@ function App() {
           <div className="row m-0">
             <div className="col-sm-12 text-center p-3">
               <div className="d-flex pb-2">
-                <img src={clockImg} alt="P" className="img-icon-100 rounded-circle p-0" />
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-morado fs-xxl font-weight-bolder">
-                  ¡Paciencia!
-                </span>
-              </div>
-
-              <div className="pb-2 text-center">
-                <span className="text-gray fs-xl">
-                  <span className="text-morado">Sexy20</span> esta confirmando tu solicitud.
-                </span>
-              </div>
-              
-              <div className="d-flex pt-3">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoCheck}>OK</button>
-              </div>
-
-            </div>
-          </div>
-        </ModalBody>
-      </Modal>
-      {/* Modal  END */}
-
-      {/* Modal START */}
-      <Modal isOpen={checkModal} toggle={toggleCheck} className="modal-dialog-center" >
-        <ModalBody className="bg-gray rounded p-0">
-
-          <div className="row m-0">
-            <div className="col-sm-12 text-center p-3">
-              <div className="d-flex pb-2">
                 <img src={checkImg} alt="P" className="img-icon-100 rounded-circle p-0" />
               </div>
 
               <div className="pb-2 text-center">
-                <span className="text-morado fs-xxl font-weight-bolder">
-                  ¡Paciencia!
-                </span>
-              </div>
-
-              <div className="pb-2 text-center">
                 <span className="text-gray fs-xl">
-                  <span className="text-morado">Sexy20</span> esta confirmando tu solicitud.
+                  <span className="text-morado">Sexy20</span> ha confirmado tu solicitud.
                 </span>
               </div>
               
               <div className="d-flex pt-3">
-                <button className="btn btn-secondary w-50 py-3 mr-2 fs-l" onClick={toggleCheck}>Cancelar</button>
+                <button className="btn btn-secondary w-50 py-3 mr-2 fs-l" onClick={toggle}>Cancelar</button>
                 <button className="btn btn-primary w-50 py-3 ml-2 fs-l" onClick={gotoPay}>Pagar</button>
               </div>
 

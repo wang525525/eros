@@ -8,6 +8,7 @@ import Contact from "./contact";
 import Contact2 from "./contact2";
 import Contact2Sub1 from "./contact2Sub1";
 import Contact2Sub2 from "./contact2Sub2";
+import Contact2Sub3 from "./contact2Sub3";
 import Contact3 from "./contact3";
 import Contact3Sub1 from "./contact3Sub1";
 import Hist from "./history";
@@ -48,6 +49,7 @@ class App extends React.Component {
           <Route exact path="/client/contact2" render={()=><Contact2/>}/>
           <Route exact path="/client/contact2sub1" render={()=><Contact2Sub1/>}/>
           <Route exact path="/client/contact2sub2" render={()=><Contact2Sub2/>}/>
+          <Route exact path="/client/contact2sub3" render={()=><Contact2Sub3/>}/>
           <Route exact path="/client/contact3" render={()=><Contact3/>}/>
           <Route exact path="/client/contact3sub1" render={()=><Contact3Sub1/>}/>
           <Route exact path="/client/hist" render={()=><Hist/>}/>
