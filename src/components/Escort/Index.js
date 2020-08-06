@@ -16,6 +16,7 @@ import ServiceDuration from "./serviceDuration";
 import ServiceAddTime from "./serviceAddTime";
 import ServicePay from "./servicePay";
 import Refer from "./refer";
+import BonusFull from "./bonusFull";
 
 class App extends React.Component {
 
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route exact path="/escort/hist" render={()=><History/>}/>
           <Route exact path="/escort/details" render={()=><ServiceDetails/>}/>
           <Route exact path="/escort/bonus" render={()=><Bonus/>}/>
+          <Route exact path="/escort/bonusfull" render={()=><BonusFull/>}/>
           <Route exact path="/escort/about" render={()=><About/>}/>
           <Route exact path="/escort/exit" render={()=><Exit/>}/>
           <Route exact path="/escort/chat" render={()=><Chat/>}/>

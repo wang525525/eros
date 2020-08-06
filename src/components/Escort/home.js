@@ -84,7 +84,7 @@ function App() {
         <div className="container mt-auto pb-5">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
-              <div className="d-flex border-b pb-2">
+              <div className="d-flex border-b pb-2 fs-xl">
                 <img src={moneda} alt="P" className="img-icon-54" />
                 <div className="pl-3">
                   <div className="text-left App-Question--x2 tamano-texto-interno2 ">
@@ -95,7 +95,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <div className="btn btn-primary text-white text-decoration-none">
+                  <div className="btn btn-primary fs-xl">
                     Retirar
                   </div>
                 </div>
@@ -104,7 +104,7 @@ function App() {
               <div className="d-flex pt-3">
                 <i className="fas fa-briefcase fs-xxl text-white ml-2"></i>
                 <div className="pl-3">
-                  <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                  <div className="text-morado fs-xl">
                     Disponible
                   </div>
                 </div>
@@ -117,7 +117,7 @@ function App() {
                   />
                 </div>
               </div>
-              <div className="text-gray">
+              <div className="text-gray fs-xl">
                 Si esta desactivado, tu perfil no estará disponible para prestar servicios.
               </div>
             </div>

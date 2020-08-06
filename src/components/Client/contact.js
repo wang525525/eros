@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import TextField from '@material-ui/core/TextField';
 
 import '../../App.css';
 import Rating from '@material-ui/lab/Rating';
@@ -134,11 +135,6 @@ function App() {
                             name="check_out"
                             className="form-control text-left"
                             placeholder="" required/>
-                    <div className="input-group-append">
-                      <span className="input-group-text">
-                        <i className="fas fa-clock"></i>
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -155,7 +151,7 @@ function App() {
                 <div className="col-sm-12 p-0 border-b">
                   <div className="row">
                     <div className="col-6">
-                      <span className="fs-n text-morado">Hora de inicio</span>
+                      <span className="fs-l text-morado">Hora de inicio</span>
                     </div>
                     <div className="col-6">
                       <div className="input-group mb-3">
@@ -167,17 +163,12 @@ function App() {
                                 name="check_out"
                                 className="form-control text-left"
                                 placeholder="09:00 pm" required/>
-                        <div className="input-group-append">
-                          <span className="input-group-text">
-                            <i className="fas fa-clock"></i>
-                          </span>
-                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-6">
-                      <span className="fs-n text-morado">Hora final</span>
+                      <span className="fs-l text-morado">Hora final</span>
                     </div>
                     <div className="col-6">
                       <div className="input-group mb-3">
@@ -189,11 +180,6 @@ function App() {
                                 name="check_out"
                                 className="form-control text-left"
                                 placeholder="09:00 pm" required/>
-                        <div className="input-group-append">
-                          <span className="input-group-text">
-                            <i className="fas fa-clock"></i>
-                          </span>
-                        </div>
                       </div>
                     </div>
                   </div>

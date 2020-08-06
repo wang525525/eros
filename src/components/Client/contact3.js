@@ -153,11 +153,11 @@ function App() {
               </div>
 
               <div className="d-flex pt-4 fs-l">
-                <button className="btn btn-secondary w-50 mx-2">
+                <button className="btn btn-secondary w-50 fs-xl mx-2">
                   <i className="fas fa-tag pr-2"></i>
                   Usar bono
                 </button>
-                <button className="btn btn-primary w-50 mx-2" onClick={showModal}>
+                <button className="btn btn-primary w-50 fs-xl mx-2" onClick={showModal}>
                   <i className="fas fa-credit-card pr-2"></i>
                   Pagar
                 </button>

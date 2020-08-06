@@ -51,12 +51,12 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
 
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
+              <div className="row justify-content-center background-gray m-2 mt-5 p-3 rounded">
                 <div className="col-sm-12 rounded d-flex">
                   <div className="d-flex my-auto">
                     <img src={girlImg} className="img-icon-48 rounded mr-2" />
@@ -66,12 +66,12 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
 
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
+              <div className="row justify-content-center background-gray m-2 mt-5 p-3 rounded">
                 <div className="col-sm-12 rounded d-flex">
                   <div className="d-flex my-auto">
                     <img src={girlImg} className="img-icon-48 rounded mr-2" />
@@ -81,8 +81,8 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
   

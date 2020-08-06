@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 
 import '../../App.css';
 
-import defaultMan from '../../assets/images/design/image-default.jpg';
+import girlImg from '../../assets/images/design/image-girl.jpg';
 
 import Config from "../../helpers/config";
 
@@ -19,6 +19,7 @@ function App() {
     head: {
       backgroundColor: '#171715',
       color: '#FE2D66',
+      fontSize: '1.25rem'
     },
     body: {
       fontSize: 14,
@@ -42,17 +43,14 @@ function App() {
   }
 
   const rows = [
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
   ];
   const rows2 = [
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
-    createData('Lucho$', defaultMan, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
+    createData('Lucho$', girlImg, '10/03/2020', 'Escort', '$150,000', 'EC$150'),
   ];
 
   function gotoDetails(e) {
@@ -74,29 +72,29 @@ function App() {
                 <StyledTableRow key={i}>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <img src={row.img} className="img-icon-32" />
+                      <img src={row.img} className="img-icon-48 rounded" />
                     </div>
                   </StyledTableCell>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center cursor" onClick={gotoDetails}>
-                      <span className="text-morado">{row.name}</span>
+                      <span className="text-morado fs-l">{row.name}</span>
                     </div>
                     <div className="text-center">
-                      <span className="pt-2">{row.date}</span>
+                      <span className="pt-2 fs-l">{row.date}</span>
                     </div>
                   </StyledTableCell>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <span className="text-morado">{row.service}</span>
+                      <span className="text-morado fs-l">{row.service}</span>
                     </div>
                   </StyledTableCell>
                     
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <span className="text-morado">{row.ecCost}</span>
+                      <span className="text-morado fs-l">{row.ecCost}</span>
                     </div>
                     <div className="text-center">
-                      <span className="pt-2">{row.cost}</span>
+                      <span className="pt-2 fs-l">{row.cost}</span>
                     </div>
                   </StyledTableCell>
                 </StyledTableRow>
@@ -113,29 +111,29 @@ function App() {
                 <StyledTableRow key={i}>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <img src={row.img} className="img-icon-32" />
+                      <img src={row.img} className="img-icon-48 rounded" />
                     </div>
                   </StyledTableCell>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center cursor" onClick={gotoDetails}>
-                      <span className="text-morado">{row.name}</span>
+                      <span className="text-morado fs-l">{row.name}</span>
                     </div>
                     <div className="text-center">
-                      <span className="pt-2">{row.date}</span>
+                      <span className="pt-2 fs-l">{row.date}</span>
                     </div>
                   </StyledTableCell>
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <span className="text-morado">{row.service}</span>
+                      <span className="text-morado fs-l">{row.service}</span>
                     </div>
                   </StyledTableCell>
                     
                   <StyledTableCell scope="row" align="center">
                     <div className="text-center">
-                      <span className="text-morado">{row.ecCost}</span>
+                      <span className="text-morado fs-l">{row.ecCost}</span>
                     </div>
                     <div className="text-center">
-                      <span className="pt-2">{row.cost}</span>
+                      <span className="pt-2 fs-l">{row.cost}</span>
                     </div>
                   </StyledTableCell>
                 </StyledTableRow>

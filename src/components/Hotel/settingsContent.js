@@ -25,7 +25,7 @@ function App(props) {
   }, {
     label: "Bonos y referidos",
     ico: bonus,
-    url: "hotel/bonus"
+    url: "hotel/bonusfull"
   }, {
     label: "Chat y soporte",
     ico: chat,

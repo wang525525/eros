@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../App.css';
-import radarImg from '../../assets/images/resources/radar.png';
+import clockImg from '../../assets/images/resources/icono-reloj.png';
 import background from '../../assets/images/design/bg-erosapp-clientes.png';
 import confirmImg from '../../assets/images/resources/confirm-icon.png';
 
@@ -56,7 +56,7 @@ function App() {
               <div className="row justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-12 text-center mt-4">
-                    <img className="img-fluid" src={radarImg} alt="ErosApp"/>
+                    <img className="img-fluid" src={clockImg} alt="ErosApp"/>
                   </div>
                 </div>
               </div>

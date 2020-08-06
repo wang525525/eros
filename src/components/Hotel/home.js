@@ -50,6 +50,11 @@ function App() {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
+  const [tempLeft, setTempLeft] = useState('$50,000');
+  const [tempRight, setTempRight] = useState('$50,000');
+
+  const [activeButton, setActiveButton] = useState(1);
+  
   function clickHandler(e) {
     e.preventDefault()
     window.location.href = Config.ConfigAppUrl + 'hotel/setting';
@@ -63,6 +68,27 @@ function App() {
   function gotoNotification(e) {
     e.preventDefault();
     window.location.href = Config.ConfigAppUrl + 'hotel/notification';
+  }
+
+  function setLower(e) {
+    e.preventDefault();
+    setTempLeft('$40,000');
+    setTempRight('$40,000');
+    setActiveButton(0);
+  }
+
+  function setMiddle(e) {
+    e.preventDefault();
+    setTempLeft('$50,000');
+    setTempRight('$50,000');
+    setActiveButton(1);
+  }
+
+  function setHigher(e) {
+    e.preventDefault();
+    setTempLeft('$60,000');
+    setTempRight('$60,000');
+    setActiveButton(2);
   }
 
   return (
@@ -186,7 +212,7 @@ function App() {
                       <i className="fas fa-moon fs-xl text-pink pr-2 my-auto"></i>
                       <div className="">
                         <span className="d-flex text-morado">Costo por hora</span>
-                        <span className="text-white">$40,000</span>
+                        <span className="text-white">{tempLeft}</span>
                       </div>
                     </div>
                   </div>
@@ -195,16 +221,16 @@ function App() {
                       <i className="far fa-clock fs-xl text-pink pr-2 my-auto"></i>
                       <div className="">
                         <span className="d-flex text-morado">Costo por noche</span>
-                        <span className="text-white">$40,000</span>
+                        <span className="text-white">{tempRight}</span>
                       </div>
                     </div>
                   </div>
                 </div>
               
                 <div className="d-flex mt-4 justify-content-center">
-                  <button className="btn btn-secondary mr-2">Sencilla</button>
-                  <button className="btn btn-primary mr-2">Junior</button>
-                  <button className="btn btn-secondary mr-2">Presidencial</button>
+                  <button className={(activeButton == 0)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setLower}>Sencilla</button>
+                  <button className={(activeButton == 1)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setMiddle}>Junior</button>
+                  <button className={(activeButton == 2)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setHigher}>Presidencial</button>
                 </div>
               
                 <button className="btn btn-primary w-100 py-3 mt-4 mb-4" onClick={gotoNotification}>Reservar</button>

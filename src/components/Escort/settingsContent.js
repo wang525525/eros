@@ -25,7 +25,7 @@ function App(props) {
   }, {
     label: "Bonos y referidos",
     ico: bonus,
-    url: "escort/bonus"
+    url: "escort/bonusfull"
   }, {
     label: "Chat y soporte",
     ico: chat,

@@ -61,7 +61,7 @@ class App extends React.Component {
                       {Object.entries(this.state.items).map((_v,k)=>{
                         let v = _v[0]
                         return  <div  key={k}
-                                      className={(_v[1])?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}
+                                      className={(_v[1])?"btn btn-primary fs-l mr-1 mt-1":"btn btn-secondary fs-l mr-1 mt-1"}
                                       onClick={()=>this.setBtn(_v)}
                                 >
                                   {v}

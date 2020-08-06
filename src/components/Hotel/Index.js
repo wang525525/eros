@@ -13,6 +13,7 @@ import Exit from "./exit";
 import Sencilla from "./sencilla";
 import Refer from "./refer";
 import Notification from "./notification";
+import BonusFull from "./bonusFull";
 
 class App extends React.Component {
 
@@ -33,6 +34,7 @@ class App extends React.Component {
           <Route exact path="/hotel/edit" render={()=><EditProfile/>}/>
           <Route exact path="/hotel/config" render={()=><Configuration/>}/>
           <Route exact path="/hotel/bonus" render={()=><Bonus/>}/>
+          <Route exact path="/hotel/bonusfull" render={()=><BonusFull/>}/>
           <Route exact path="/hotel/chat" render={()=><Chat/>}/>
           <Route exact path="/hotel/about" render={()=><About/>}/>
           <Route exact path="/hotel/exit" render={()=><Exit/>}/>
