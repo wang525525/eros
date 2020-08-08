@@ -122,7 +122,7 @@ function App() {
               </div>
 
               <div className="d-flex pt-4 pb-2">
-                <button className="btn btn-primary w-100 fs-xl py-3" onClick={acceptService}>
+                <button className="btn btn-primary w-100 py-3" onClick={acceptService}>
                   <i className="fas fa-stop text-white pr-2"></i>
                   Terminar servicio
                 </button>
@@ -162,8 +162,8 @@ function App() {
           </div>
 
           <div className="d-flex">
-            <button className="btn btn-secondary w-50 py-3 fs-l" onClick={toggle}>Rechazar</button>
-            <button className="btn btn-primary w-50 py-3 fs-l" onClick={acceptPayment}>Aceptar</button>
+            <button className="btn btn-secondary w-50 py-3" onClick={toggle}>Rechazar</button>
+            <button className="btn btn-primary w-50 py-3" onClick={acceptPayment}>Aceptar</button>
           </div>
 
         </ModalBody>

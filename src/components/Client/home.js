@@ -91,7 +91,7 @@ function App() {
                 <Tabs bottom={true}>
                   <Tab active={true} value="camera" 
                       header={
-                        <img src={cameraImg} className="img-icon-32" />
+                        <img src={cameraImg} className="img-icon-40" />
                       }
                   >
                     <div className="client-home-panel">
@@ -107,7 +107,7 @@ function App() {
                   </Tab>
                   <Tab value="service" 
                       header={
-                        <img src={serviceImg} className="img-icon-32" />
+                        <img src={serviceImg} className="img-icon-40" />
                       }
                   >
                     <div className="client-home-panel fs-l">
@@ -199,7 +199,7 @@ function App() {
                   </Tab>
                   <Tab value="client" 
                       header={
-                        <img src={clientImg} className="img-icon-32" />
+                        <img src={clientImg} className="img-icon-40" />
                       }
                   >
                     <div className="client-home-panel fs-l">

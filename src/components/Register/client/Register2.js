@@ -147,7 +147,7 @@ function App() {
           </div>
           <div className="row justify-content-md-center mt-2 mb-4">
             <div className="col-sm-12 col-md-8 col-lg-7 text-center">
-              <Link onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" >
+              <Link onClick={handleClick} className="btn btn-primary btn-block text-white text-decoration-none" >
                 Continuar
               </Link>
             </div>

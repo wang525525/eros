@@ -146,8 +146,8 @@ function App() {
               </div>
 
               <div className="d-flex pt-3">
-                <button className="btn btn-secondary fs-l w-50 mr-2 py-3">Cancelar</button>
-                <button className="btn btn-primary fs-l w-50 ml-2 py-3" onClick={payService}>Pagar</button>
+                <button className="btn btn-secondary w-50 mr-2 py-3">Cancelar</button>
+                <button className="btn btn-primary w-50 ml-2 py-3" onClick={payService}>Pagar</button>
               </div>
 
             </div>
@@ -185,8 +185,8 @@ function App() {
               </div>
 
               <div className="d-flex">
-                <button className="btn btn-secondary w-50 py-3 fs-l mr-2" onClick={toggle}>No</button>
-                <button className="btn btn-primary w-50 py-3 fs-l ml-2" onClick={gotoConfirm}>Si</button>
+                <button className="btn btn-secondary w-50 py-3 mr-2" onClick={toggle}>No</button>
+                <button className="btn btn-primary w-50 py-3 ml-2" onClick={gotoConfirm}>Si</button>
               </div>
 
             </div>
@@ -217,7 +217,7 @@ function App() {
               </div>
 
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoServiceDuration}>Continuar</button>
+                <button className="btn btn-primary w-100 py-3" onClick={gotoServiceDuration}>Continuar</button>
               </div>
 
             </div>

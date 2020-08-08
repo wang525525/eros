@@ -129,12 +129,12 @@ function App() {
 
               <div className="row justify-content-center ">
                 <div className="col-6 text-center mt-3">
-                  <button className="btn btn-secondary fs-xl w-100 py-3">
+                  <button className="btn btn-secondary w-100 py-3">
                     Cancelar
                   </button>
                 </div>
                 <div className="col-6 text-center mt-3">
-                  <button className="btn btn-primary fs-xl w-100 py-3" onClick={gotoEdit}>
+                  <button className="btn btn-primary w-100 py-3" onClick={gotoEdit}>
                     Guardar
                   </button>
                 </div>

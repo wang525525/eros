@@ -188,7 +188,7 @@ function App() {
               
               <div className="row justify-content-center mt-4">
                 <div className="col-sm-12">
-                  <button onClick={showModal} className="btn btn-primary w-100 py-2 fs-l">Solicitar servicio</button>
+                  <button onClick={showModal} className="btn btn-primary w-100 py-2">Solicitar servicio</button>
                 </div>
               </div>
 
@@ -225,8 +225,8 @@ function App() {
           </div>
 
           <div className="d-flex">
-            <button className="btn btn-secondary w-50 py-3 fs-l" onClick={gotoNextStep}>Rechazar</button>
-            <button className="btn btn-primary w-50 py-3 fs-l" onClick={gotoNextStep}>Aceptar</button>
+            <button className="btn btn-secondary w-50 py-3" onClick={gotoNextStep}>Rechazar</button>
+            <button className="btn btn-primary w-50 py-3" onClick={gotoNextStep}>Aceptar</button>
           </div>
 
         </ModalBody>

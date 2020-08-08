@@ -160,7 +160,7 @@ function App() {
               </div> */}
 
               <div className="d-flex pt-4 pb-2">
-                <button className="btn btn-primary w-100 fs-xl py-3" onClick={showModal}>
+                <button className="btn btn-primary w-100 py-3" onClick={showModal}>
                   <i className="fas fa-play text-white pr-2"></i>
                   Empezar servicio
                 </button>
@@ -206,7 +206,7 @@ function App() {
               </div>
               
               <div className="d-flex pt-3">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoNextStep1}>OK</button>
+                <button className="btn btn-primary w-100 py-3" onClick={gotoNextStep1}>OK</button>
               </div>
 
             </div>
@@ -243,8 +243,8 @@ function App() {
           </div>
 
           <div className="d-flex">
-            <button className="btn btn-secondary w-50 py-3 fs-l" onClick={gotoReview}>Rechazar</button>
-            <button className="btn btn-primary w-50 py-3 fs-l" onClick={gotoPay}>Aceptar</button>
+            <button className="btn btn-secondary w-50 py-3" onClick={gotoReview}>Rechazar</button>
+            <button className="btn btn-primary w-50 py-3" onClick={gotoPay}>Aceptar</button>
           </div>
 
         </ModalBody>
@@ -280,8 +280,8 @@ function App() {
               </div>
 
               <div className="d-flex">
-                <button className="btn btn-secondary w-50 py-3 fs-l mr-2" onClick={togglePay}>No</button>
-                <button className="btn btn-primary w-50 py-3 fs-l ml-2" onClick={gotoService}>Si</button>
+                <button className="btn btn-secondary w-50 py-3 mr-2" onClick={togglePay}>No</button>
+                <button className="btn btn-primary w-50 py-3 ml-2" onClick={gotoService}>Si</button>
               </div>
 
             </div>
@@ -330,12 +330,12 @@ function App() {
                 if (ratingValue > 0) {
                   return (
                     <div className="pb-2 text-center">
-                      <div onClick={setPuntalityValue} className={(puntality)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Puntualidad</div>
-                      <div onClick={setHigeneValue} className={(higene)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Higiene</div>
-                      <div onClick={setAttitudeValue} className={(attitude)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Actitud</div>
-                      <div onClick={setPresentationValue} className={(presentation)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Presentacion personal</div>
-                      <div onClick={setTreatValue} className={(treat)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Trato</div>
-                      <div onClick={setServiceValue} className={(service)?"fs-l btn btn-primary mr-1 mt-1":"fs-l btn btn-secondary mr-1 mt-1"}>Servicio</div>
+                      <div onClick={setPuntalityValue} className={(puntality)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Puntualidad</div>
+                      <div onClick={setHigeneValue} className={(higene)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Higiene</div>
+                      <div onClick={setAttitudeValue} className={(attitude)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Actitud</div>
+                      <div onClick={setPresentationValue} className={(presentation)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Presentacion personal</div>
+                      <div onClick={setTreatValue} className={(treat)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Trato</div>
+                      <div onClick={setServiceValue} className={(service)?"btn btn-primary mr-1 mt-1":"btn btn-secondary mr-1 mt-1"}>Servicio</div>
                     </div>
                   )
                 } else {

@@ -151,7 +151,7 @@ function App() {
           </div>
           <div className="row justify-content-md-center mt-3">
             <div className="col-sm-12 col-md-8 col-lg-7 text-centerr">
-              <div onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none" href={Config.ConfigAppUrl+"Auth/HotelRegister5"} >
+              <div onClick={handleClick} className="btn btn-primary btn-block text-white text-decoration-none" href={Config.ConfigAppUrl+"Auth/HotelRegister5"} >
                 Finalizar
               </div>
             </div>

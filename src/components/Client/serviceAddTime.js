@@ -125,7 +125,7 @@ function App() {
               </div>
 
               <div className="d-flex pt-4 pb-2">
-                <button className="btn btn-primary w-100 fs-xl py-3" onClick={acceptService}>
+                <button className="btn btn-primary w-100 py-3" onClick={acceptService}>
                   <i className="fas fa-stop text-white pr-2"></i>
                   Terminar servicio
                 </button>
@@ -154,8 +154,8 @@ function App() {
               </div>
               
               <div className="d-flex pt-3">
-                <button className="btn btn-secondary w-50 py-3 mr-2 fs-l" onClick={toggle}>Cancelar</button>
-                <button className="btn btn-primary w-50 py-3 ml-2 fs-l" onClick={gotoPay}>Pagar</button>
+                <button className="btn btn-secondary w-50 py-3 mr-2" onClick={toggle}>Cancelar</button>
+                <button className="btn btn-primary w-50 py-3 ml-2" onClick={gotoPay}>Pagar</button>
               </div>
 
             </div>

@@ -139,7 +139,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <button className="btn btn-primary fs-xl">
+                  <button className="btn btn-primary">
                     Retirar
                   </button>
                 </div>

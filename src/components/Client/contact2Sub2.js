@@ -51,8 +51,8 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@ function App() {
                   </div>
                 </div>
                 <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 fs-xl mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 fs-xl ml-2" onClick={gotoNext}>Acceptar</button>
+                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
                 </div>
               </div>
   

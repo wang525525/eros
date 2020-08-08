@@ -65,7 +65,7 @@ function App() {
             
               <div className="row justify-content-center mt-4">
                 <div className="col-sm-12">
-                  <button onClick={gotoNextStep} className="btn btn-primary w-100 py-2 fs-l">Confirmación</button>
+                  <button onClick={gotoNextStep} className="btn btn-primary w-100 py-2">Confirmación</button>
                 </div>
               </div>
 

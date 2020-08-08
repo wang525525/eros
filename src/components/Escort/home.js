@@ -95,7 +95,7 @@ function App() {
                   </div>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <div className="btn btn-primary fs-xl">
+                  <div className="btn btn-primary">
                     Retirar
                   </div>
                 </div>
@@ -180,8 +180,8 @@ function App() {
               </div>
 
               <div className="d-flex pb-2">
-                <button className="btn btn-secondary w-50 mx-2 py-3 fs-l" onClick={toggle}>Rechazar</button>
-                <button className="btn btn-primary w-50 mx-2 py-3 fs-l" onClick={showNextModal}>Aceptar</button>
+                <button className="btn btn-secondary w-50 mx-2 py-3" onClick={toggle}>Rechazar</button>
+                <button className="btn btn-primary w-50 mx-2 py-3" onClick={showNextModal}>Aceptar</button>
               </div>
 
             </div>
@@ -261,13 +261,13 @@ function App() {
                 </div>
               </div>
               <div className="d-flex pt-4 pb-2">
-                <button className="btn btn-primary w-100 fs-xl py-3" onClick={gotoServiceDetail}>
+                <button className="btn btn-primary w-100 py-3" onClick={gotoServiceDetail}>
                   <i className="fas fa-play text-white pr-2"></i>
                   Iniciar servicio
                 </button>
               </div>
               <div className="d-flex pb-2">
-                <button className="btn btn-secondary w-100 fs-xl py-3" onClick={toggleService}>
+                <button className="btn btn-secondary w-100 py-3" onClick={toggleService}>
                   <i className="fas fa-times-circle text-morado pr-2"></i>
                   Cancelar servicio
                 </button>

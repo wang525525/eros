@@ -177,7 +177,7 @@ function App() {
                             ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
                           </span>
                           <div className="d-flex justify-content-center pt-2">
-                            <button className="btn w-75 rounded-pill fs-l btn-primary">Redimir</button>
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
                           </div>
                         </div>
                       </div>
@@ -192,7 +192,7 @@ function App() {
                             ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
                           </span>
                           <div className="d-flex justify-content-center pt-2">
-                            <button className="btn w-75 rounded-pill fs-l btn-primary">Redimir</button>
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
                           </div>
                         </div>
                       </div>
@@ -207,7 +207,7 @@ function App() {
                             ¡Gana el 10% de descuento por el primer servicio que preste o tome tu referido!
                           </span>
                           <div className="d-flex justify-content-center pt-2">
-                            <button className="btn w-75 rounded-pill fs-l btn-primary">Redimir</button>
+                            <button className="btn w-75 rounded-pill btn-primary">Redimir</button>
                           </div>
                         </div>
                       </div>

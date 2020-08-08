@@ -99,7 +99,7 @@ function App() {
 
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
-              <button className="btn btn-primary w-100 py-2 fs-xl" onClick={changeRole}>
+              <button className="btn btn-primary w-100 py-2" onClick={changeRole}>
                 <i className="fas fa-user-friends pr-2"></i>
                 Cambiar a rol trabajador
               </button>
@@ -129,7 +129,7 @@ function App() {
               </div>
               
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={clickHandler}>Si</button>
+                <button className="btn btn-primary w-100 py-3" onClick={clickHandler}>Si</button>
               </div>
 
             </div>
@@ -157,7 +157,7 @@ function App() {
               </div>
               
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l">Si</button>
+                <button className="btn btn-primary w-100 py-3">Si</button>
               </div>
 
             </div>

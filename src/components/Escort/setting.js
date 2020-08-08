@@ -121,7 +121,7 @@ function App() {
                 </div>
                 
                 <div className="ml-auto mt-auto mb-auto">
-                  <div onClick={handleClick} className="btn btn-primary btn-block btn-lg text-white text-decoration-none"
+                  <div onClick={handleClick} className="btn btn-primary btn-block text-white text-decoration-none"
                     href="#" onClick={e => e.preventDefault()}>
                     Retirar
                     </div>
@@ -159,7 +159,7 @@ function App() {
               </div>
               
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={clickHandler}>Si</button>
+                <button className="btn btn-primary w-100 py-3" onClick={clickHandler}>Si</button>
               </div>
 
             </div>

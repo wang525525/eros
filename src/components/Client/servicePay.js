@@ -128,8 +128,8 @@ function App() {
               </div>
 
               <div className="d-flex pt-3">
-                <button className="btn btn-secondary fs-l w-50 mr-2 py-3">Cancelar</button>
-                <button className="btn btn-primary fs-l w-50 ml-2 py-3" onClick={payService}>Pagar</button>
+                <button className="btn btn-secondary w-50 mr-2 py-3">Cancelar</button>
+                <button className="btn btn-primary w-50 ml-2 py-3" onClick={payService}>Pagar</button>
               </div>
 
             </div>

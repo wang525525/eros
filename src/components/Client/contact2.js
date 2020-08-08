@@ -103,7 +103,7 @@ function App() {
               </div>
 
               <div className="d-flex">
-                <button className="btn btn-primary w-100 py-3 fs-l" onClick={gotoSubContact}>Continuar</button>
+                <button className="btn btn-primary w-100 py-3" onClick={gotoSubContact}>Continuar</button>
               </div>
 
             </div>

@@ -311,6 +311,7 @@ html,body{
 .btn-primary:focus{
   background-color: #FE2D66 !important;
   border: 0 !important;
+  font-size: 1.5rem;
 }
 
 
@@ -319,6 +320,7 @@ html,body{
   background-color: transparent !important;
   border: solid 1px #bbb;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .form-control:focus {
@@ -770,6 +772,10 @@ label {
 .img-icon-48 {
   width: 48px;
   height: 48px;
+}
+.img-icon-40 {
+  width: 40px;
+  height: 40px;
 }
 .img-icon-32 {
   width: 32px;
