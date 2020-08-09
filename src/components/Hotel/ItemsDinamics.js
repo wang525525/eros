@@ -52,7 +52,7 @@ class App extends React.Component {
     return (<>
                 {(this.props.boolTitle===undefined || this.props.boolTitle===true)?<div className="row justify-content-md-center mt-0">
                   <div className="col-12">
-                    <div className="App-Question text-left">¿Tienes cirugías estéticas?</div>
+                    <div className="App-Question text-left">¿Qué incluye la habitación?</div>
                   </div>
                 </div>:''}
                 <div className="row justify-content-md-center mt-0">

@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
 import '../../App.css';
+import Rating from '@material-ui/lab/Rating';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import { makeStyles } from '@material-ui/core/styles';
+
 import logo from '../../assets/images/resources/icono-reloj.png';
 import background from '../../assets/images/design/bg-erosapp-clientes.png';
 import girlImg from '../../assets/images/design/image-girl.jpg';
@@ -15,7 +19,14 @@ const divBackground = {
   backgroundImage: 'url(' + background + ')',
 };
 
+const useStyles = makeStyles({
+  iconEmpty: {
+    color: '#ffb400'
+  }
+});
+
 function App() {
+  const classes = useStyles();
   const context               =   React.useContext(StateContext);
 
   function gotoPayHome(e) {
@@ -35,54 +46,72 @@ function App() {
   return (
     <div>
       
-      <div className="App-LogoCenter App-splash" style={divBackground}>
+      <div className="App-Logo App-splash" style={divBackground}>
         <TopbarSimple clickHandler={gotoSubContact} name={'Contratar'}></TopbarSimple>
         <div className="App-form-register container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
   
-              <div className="row justify-content-center background-gray m-2 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
+              <div className="row justify-content-center background-gray m-2 mt-3 p-3 rounded">
+                <div className="col-6">
+                  <div className="d-flex">
+                    <img src={girlImg} className="img-icon-80 rounded" />
+                    <span className="text-morado fs-xl pl-3">Sexy 20, 29</span>
                   </div>
-                  <div className="fs-l mt-1">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
-                  </div>
-                </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
-                </div>
-              </div>
-
-              <div className="row justify-content-center background-gray m-2 mt-5 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
-                  </div>
-                  <div className="fs-l mt-1">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
+                  <div className="d-flex pt-2">
+                    <Rating 
+                      name="read-only" 
+                      value={4} 
+                      emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                      classes={{iconEmpty: classes.iconEmpty}}
+                      readOnly />
                   </div>
                 </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                <div className="col-6">
+                  <button className="btn btn-primary w-100" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-100 mt-3" onClick={gotoNext}>Aceptar</button>
                 </div>
               </div>
 
-              <div className="row justify-content-center background-gray m-2 mt-5 p-3 rounded">
-                <div className="col-sm-12 rounded d-flex">
-                  <div className="d-flex my-auto">
-                    <img src={girlImg} className="img-icon-48 rounded mr-2" />
+              <div className="row justify-content-center background-gray m-2 mt-4 p-3 rounded">
+                <div className="col-6">
+                  <div className="d-flex">
+                    <img src={girlImg} className="img-icon-80 rounded" />
+                    <span className="text-morado fs-xl pl-3">Sexy 20, 29</span>
                   </div>
-                  <div className="fs-l mt-1">
-                    <span className="d-flex text-morado">¡Carla10 le interesa tu solicitud!</span>
+                  <div className="d-flex pt-2">
+                    <Rating 
+                      name="read-only" 
+                      value={4} 
+                      emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                      classes={{iconEmpty: classes.iconEmpty}}
+                      readOnly />
                   </div>
                 </div>
-                <div className="col-sm-12 rounded d-flex pt-2 fs-n">
-                  <button className="btn btn-primary w-50 mr-2" onClick={gotoPayHome}>Ver perfil</button>
-                  <button className="btn btn-primary w-50 ml-2" onClick={gotoNext}>Acceptar</button>
+                <div className="col-6">
+                  <button className="btn btn-primary w-100" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-100 mt-3" onClick={gotoNext}>Aceptar</button>
+                </div>
+              </div>
+
+              <div className="row justify-content-center background-gray m-2 mt-4 p-3 rounded">
+                <div className="col-6">
+                  <div className="d-flex">
+                    <img src={girlImg} className="img-icon-80 rounded" />
+                    <span className="text-morado fs-xl pl-3">Sexy 20, 29</span>
+                  </div>
+                  <div className="d-flex pt-2">
+                    <Rating 
+                      name="read-only" 
+                      value={4} 
+                      emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                      classes={{iconEmpty: classes.iconEmpty}}
+                      readOnly />
+                  </div>
+                </div>
+                <div className="col-6">
+                  <button className="btn btn-primary w-100" onClick={gotoPayHome}>Ver perfil</button>
+                  <button className="btn btn-primary w-100 mt-3" onClick={gotoNext}>Aceptar</button>
                 </div>
               </div>
   

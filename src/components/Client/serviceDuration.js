@@ -48,14 +48,9 @@ function App() {
   const [reviewModal, setReviewModal] = useState(false);
   const toggleReview = () => setReviewModal(!reviewModal);
 
-  function gotoEscort(e) {
+  function gotoPrev(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'escort/home';
-  }
-
-  function addServiceTime(e) {
-    e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'escort/serviceadd';
+    window.location.href = Config.ConfigAppUrl + 'client/contact3';
   }
 
   function showModal(e) {
@@ -109,7 +104,7 @@ function App() {
     <div>
       
       <div className="App-Logo App-splash" style={divBackground}>
-        <TopbarSimple clickHandler={gotoEscort} name={'Duración del servicio'}></TopbarSimple>
+        <TopbarSimple clickHandler={gotoPrev} name={'Duración del servicio'}></TopbarSimple>
         <div className="container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
@@ -239,6 +234,14 @@ function App() {
                   }} />
               </div>
 
+              <div className="pb-2 text-center">
+                { ratingValue === 5 && <span className="text-morado fs-xxl font-weight-bolder">¡Perfecto!</span> }
+                { ratingValue === 4 && <span className="text-morado fs-xxl font-weight-bolder">¡Bueno!</span> }
+                { ratingValue === 3 && <span className="text-morado fs-xxl font-weight-bolder">¡Regular!</span> }
+                { ratingValue === 2 && <span className="text-morado fs-xxl font-weight-bolder">¡No fue bueno!</span> }
+                { ratingValue === 1 && <span className="text-morado fs-xxl font-weight-bolder">¡Pésimo!</span> }
+              </div>
+              
               <div className="pb-2 text-center">
                 <span className="text-white fs-n">Las calificaciones son anonimas</span>
               </div>

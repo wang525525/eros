@@ -6,7 +6,7 @@ function App(props) {
   
   return (
     
-    <nav className="navbar navbar-light bg-transparent">
+    <nav className="navbar navbar-light bg-transparent w-100">
       <div className="container">
         <div className="row flex-fill justify-content-center">
           <div className="col-sm-12 col-md-8 col-lg-7">

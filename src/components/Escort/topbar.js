@@ -17,20 +17,20 @@ function App(props) {
   
   return (
     
-    <nav className="navbar fixed-top navbar-light bg-transparent">
+    <nav className="navbar navbar-light bg-transparent w-100">
       <div className="container">
         <div className="row flex-fill justify-content-center">
           <div className="col-sm-12 col-md-8 col-lg-7">
             <div className="d-flex">
-              <div className="d-flex ml-auto">
+              <div className="d-flex ml-auto fs-xxl">
                 <a href="#" onClick={gotoBonus} className="text-white my-auto p-3">
-                  <i className="fa fa-tag fa-2x"></i>
+                  <i className="fa fa-tag"></i>
                 </a>
                 <a href="#" onClick={props.showNotificationModal} className="text-white my-auto p-3">
-                  <i className="fa fa-concierge-bell fa-2x"></i>
+                  <i className="fa fa-concierge-bell"></i>
                 </a>
                 <a href="#" onClick={gotoNotification} className="text-white my-auto p-3">
-                  <i className="fa fa-bullhorn fa-2x"></i>
+                  <i className="fa fa-bullhorn"></i>
                 </a>
               </div>
             </div>

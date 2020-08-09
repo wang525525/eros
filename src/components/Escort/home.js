@@ -65,9 +65,9 @@ function App() {
   return (
     <div>
 
-      <Topbar showNotificationModal={showNotificationModal}></Topbar>
-
-      <div className="App-LogoCenter App-splash" style={divBackground}>
+      
+      <div className="App-LogoCenter App-splash" style={divBackground}> 
+        <Topbar showNotificationModal={showNotificationModal}></Topbar>
 
         <div className="container mt-auto">
           <div className="row justify-content-center set_width_container">

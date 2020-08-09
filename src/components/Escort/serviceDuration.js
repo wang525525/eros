@@ -323,6 +323,14 @@ function App() {
               </div>
 
               <div className="pb-2 text-center">
+                { ratingValue === 5 && <span className="text-morado fs-xxl font-weight-bolder">¡Perfecto!</span> }
+                { ratingValue === 4 && <span className="text-morado fs-xxl font-weight-bolder">¡Bueno!</span> }
+                { ratingValue === 3 && <span className="text-morado fs-xxl font-weight-bolder">¡Regular!</span> }
+                { ratingValue === 2 && <span className="text-morado fs-xxl font-weight-bolder">¡No fue bueno!</span> }
+                { ratingValue === 1 && <span className="text-morado fs-xxl font-weight-bolder">¡Pésimo!</span> }
+              </div>
+
+              <div className="pb-2 text-center">
                 <span className="text-white fs-n">Las calificaciones son anonimas</span>
               </div>
 

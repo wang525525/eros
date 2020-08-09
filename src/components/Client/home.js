@@ -81,11 +81,12 @@ function App() {
 
   return (
     <div>
-      <Topbar></Topbar>
+      
       <div className="App-Logo App-splash" style={divBackground}>
+        <Topbar></Topbar>
         <div className="container">
           <div className="row justify-content-center set_width_container">
-            <div className="col-sm-12 col-md-8 col-lg-7 pt-5">
+            <div className="col-sm-12 col-md-8 col-lg-7 pb-5">
               <div className="background-gray">
                 
                 <Tabs bottom={true}>
@@ -115,31 +116,31 @@ function App() {
                         <img src={iconServiceImg} className="img-icon-32" />
                         <span className="text-morado fs-xl pl-2">¿Qué quieres hacer conmigo?</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Pasar un rato</span>
                         <span className="ml-auto text-grey">$150,000/1h</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Compañía</span>
                         <span className="ml-auto text-grey">$150,000/1h</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Striptease</span>
                         <span className="ml-auto text-grey">$60,000/20m</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">¿Destape total?</span>
                         <span className="ml-auto text-grey">Si</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Amanecida</span>
                         <span className="ml-auto text-grey">$160,000/1h</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Desde ya hasta</span>
                         <span className="ml-auto text-grey">10:00pm - 6:00am</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Video llamada</span>
                         <span className="ml-auto text-grey">$5,000/min</span>
                       </div>
@@ -148,7 +149,7 @@ function App() {
                         <img src={kissImg} className="img-icon-32" />
                         <span className="text-morado fs-xl pl-2">Mi servicio de prepago incluye:</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="ml-auto text-grey">Besos, Anal, Vaginal, Masaje, Ducha, Facial, Orgia, Oral con condon, Strap-on</span>
                       </div>
 
@@ -207,7 +208,7 @@ function App() {
                         <i className="fas fa-info-circle text-pink fs-xl my-auto"></i>
                         <span className="text-morado fs-xl pl-2">¿Quién soy?</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="ml-auto text-grey">
                           Lorem ipsum dolor sit amet, consecteur adipiscing dlit. Fusce interdum nunc id dapibus volutpat.
                           Etiam id tindidunt lacus. Cras a neque enim Sucspendisse ultricies efficitur nisl. vel viverra leo tmepus at.
@@ -219,35 +220,35 @@ function App() {
                         <span className="text-morado fs-xl pl-2">Más detalles</span>
                       </div>
 
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Micio</span>
                         <span className="ml-auto text-grey">1,55cm</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Contextura</span>
                         <span className="ml-auto text-grey">Fitness</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Cabello</span>
                         <span className="ml-auto text-grey">Largo</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Color de cabello</span>
                         <span className="ml-auto text-grey">Rubio</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Color de ojos</span>
                         <span className="ml-auto text-grey">Café</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">¿Fumo?</span>
                         <span className="ml-auto text-grey">No</span>
                       </div>
-                      <div className="d-flex pt-2">
+                      <div className="d-flex pt-2 px-5">
                         <span className="text-morado">Bebo?</span>
                         <span className="ml-auto text-grey">Si</span>
                       </div>
-                      <div className="row justify-content-center pt-2">
+                      <div className="row justify-content-center pt-2 px-5">
                         <div className="col-6">
                           <span className="text-morado">Cirugías estéticas</span>  
                         </div>
@@ -255,7 +256,7 @@ function App() {
                           <span className="text-grey">Senos, Cola, Bichectomia</span>  
                         </div>
                       </div>
-                      <div className="row justify-content-center pt-3">
+                      <div className="row justify-content-center pt-3 px-5">
                         <div className="col-5">
                           <span className="text-morado">Hobbies & Gustos:</span>  
                         </div>

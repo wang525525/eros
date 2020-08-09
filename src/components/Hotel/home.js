@@ -18,21 +18,8 @@ import man4Img from '../../assets/images/design/man4.jpg';
 
 import SwitchButton from '../common/Switch';
 
-import Carousel from "../common/Carousel/Carousel";
-import { LazyImageProvider } from "../common/LazyImage/LazyImageContext";
-import LazyImage from "../common/LazyImage/LazyImage";
 import Topbar from './topbar';
 import IconSlideUp from '../common/IconSlideUp';
-import Tabs from "../common/Tabs";
-import Tab from "../common/Tab";
-
-
-const images = [
-  man1Img,
-  man2Img,
-  man3Img,
-  man4Img
-];
 
 const divBackground = {
   backgroundImage: 'url(' + background + ')',
@@ -49,11 +36,6 @@ function App() {
 
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-
-  const [tempLeft, setTempLeft] = useState('$50,000');
-  const [tempRight, setTempRight] = useState('$50,000');
-
-  const [activeButton, setActiveButton] = useState(1);
   
   function clickHandler(e) {
     e.preventDefault()
@@ -65,37 +47,16 @@ function App() {
     setModal(true);
   }
 
-  function gotoNotification(e) {
+  function gotoHistory(e) {
     e.preventDefault();
-    window.location.href = Config.ConfigAppUrl + 'hotel/notification';
-  }
-
-  function setLower(e) {
-    e.preventDefault();
-    setTempLeft('$40,000');
-    setTempRight('$40,000');
-    setActiveButton(0);
-  }
-
-  function setMiddle(e) {
-    e.preventDefault();
-    setTempLeft('$50,000');
-    setTempRight('$50,000');
-    setActiveButton(1);
-  }
-
-  function setHigher(e) {
-    e.preventDefault();
-    setTempLeft('$60,000');
-    setTempRight('$60,000');
-    setActiveButton(2);
+    window.location.href = Config.ConfigAppUrl + 'hotel/hist';
   }
 
   return (
     <div>
-      <Topbar showNotificationModal={showNotificationModal}></Topbar>
+      
       <div className="App-LogoCenter App-splash" style={divBackground}>
-
+        <Topbar showNotificationModal={showNotificationModal}></Topbar>
         <div className="container mt-auto">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
@@ -173,113 +134,49 @@ function App() {
 
       {/* Notifcation Modal START */}
       <Modal isOpen={modal} toggle={toggle} className="mt-5" >
-        <ModalBody className="background-text3 rounded p-0">
-          <div className="container">
-            <div className="row justify-content-center set_width_container mt-3 m-0">
-              <div className="col-12 p-0">
-                <LazyImageProvider>
-                  <Carousel>
-                    {images.map((image, i) => (
-                      <LazyImage aspectRatio={[10, 7]} src={image} key={i} />
-                    ))}
-                  </Carousel>
-                </LazyImageProvider>
-              </div>
-            </div>
+        <ModalBody className="background-gray rounded p-0">
 
-            <div className="row justify-content-center m-0">
-              <div className="col-12 px-0 background-gray">
-                <div className="row mt-n-1">
-                  <div className="col-3 text-center">
-                    <img className="img-fluid img-icon-62 rounded" src={man1Img} alt="ErosApp"/>
+          <div className="row m-0 bg-gray rounded">
+            <div className="col-sm-12 text-center p-3">
+              <div className="d-flex pb-2">
+                <img src={man1Img} alt="P" className="img-icon-54 rounded" />
+                <div className="pl-3">
+                  <div className="text-left text-morado fs-l">
+                    Luicho$
                   </div>
-                  <div className="col-5 mt-auto">
-                    <div className="App-Question font-weight-bolder fs-xl text-center">Lucho$</div>
-                  </div>
-                  <div className="col-4 text-center mt-auto">
+                  <div className="d-flex">
                     <Rating 
-                        name="read-only" 
-                        value={4} 
-                        emptyIcon={<StarBorderIcon fontSize="inherit" />}
-                        classes={{iconEmpty: classes.iconEmpty}}
-                        readOnly />
+                      name="read-only" 
+                      value={4} 
+                      emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                      classes={{iconEmpty: classes.iconEmpty}}
+                      readOnly />
                   </div>
                 </div>
-              
-                <div className="row justify-content-center mt-4">
-                  <div className="col-6 ">
-                    <div className="App-Question--x2 d-flex justify-content-center">
-                      <i className="fas fa-moon fs-xl text-pink pr-2 my-auto"></i>
-                      <div className="">
-                        <span className="d-flex text-morado">Costo por hora</span>
-                        <span className="text-white">{tempLeft}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-6 ">
-                    <div className="App-Question--x2 d-flex justify-content-center">
-                      <i className="far fa-clock fs-xl text-pink pr-2 my-auto"></i>
-                      <div className="">
-                        <span className="d-flex text-morado">Costo por noche</span>
-                        <span className="text-white">{tempRight}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
-                <div className="d-flex mt-4 justify-content-center">
-                  <button className={(activeButton == 0)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setLower}>Sencilla</button>
-                  <button className={(activeButton == 1)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setMiddle}>Junior</button>
-                  <button className={(activeButton == 2)?"btn btn-primary mr-2":"btn btn-secondary mr-2"} onClick={setHigher}>Presidencial</button>
-                </div>
-              
-                <button className="btn btn-primary w-100 py-3 mt-4 mb-4" onClick={gotoNotification}>Reservar</button>
               </div>
-            </div>
 
-            <div className="row justify-content-center set_width_container m-0">
-              <div className="col-12 p-0 background-text4 fs-l text-white">
-                <Tabs>
-                  <Tab active={true} value="contact" header="Contacto">
-                    <div className="row">
-                      <div className="col-7">
-                        <i className="fas fa-phone-alt text-pink pr-3"></i>
-                        <span className="text-morado">teléfono</span>
-                      </div>
-                      <div className="col-5 text-right">
-                        <span>300,000,000</span>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-7">
-                        <i className="fas fa-parking text-pink pr-3"></i>
-                        <span className="text-morado">¿Tiene parqueadero?</span>
-                      </div>
-                      <div className="col-5 text-right">
-                        <span>Si</span>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-7">
-                        <i className="fas fa-bath text-pink pr-3"></i>
-                        <span className="text-morado">¿Tiene baño?</span>
-                      </div>
-                      <div className="col-5 text-right">
-                        <span>Si</span>
-                      </div>
-                    </div>
-
-                  </Tab>
-                  <Tab value="description" header="Descripción">
-                    Description
-                  </Tab>
-                </Tabs>
+              <div className="d-flex pb-2 fs-n">
+                <i className="far fa-calendar text-pink pr-2 my-auto"></i>
+                <span className="text-white">3/20/2020</span>
               </div>
+
+              <div className="d-flex pb-2 fs-n">
+                <i className="far fa-clock text-pink pr-2 my-auto"></i>
+                <span className="text-white">10:00pm ~ 11:00pm</span>
+              </div>
+
+              <div className="d-flex pb-2 fs-n">
+                <i className="fas fa-phone-alt text-pink pr-2 my-auto"></i>
+                <span className="text-white">123-456-7890</span>
+              </div>
+
+              <div className="d-flex pb-2">
+                <button className="btn btn-primary w-100 py-3" onClick={gotoHistory}>Aceptar</button>
+              </div>
+
             </div>
-            
           </div>
+
         </ModalBody>
       </Modal>
       {/* Notifcation Modal  END */}
