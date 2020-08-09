@@ -42,9 +42,9 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
         <div className="App-form-secondary container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7 pt-3">

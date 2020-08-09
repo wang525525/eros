@@ -27,9 +27,9 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoEscort} name={'Sobre Eroscort'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoEscort} name={'Sobre Eroscort'}></TopbarSimple>
         <div className="container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">

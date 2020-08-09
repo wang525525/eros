@@ -107,9 +107,9 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoEscort} name={'Duración del servicio'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoEscort} name={'Duración del servicio'}></TopbarSimple>
         <div className="container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
@@ -130,7 +130,7 @@ function App() {
                         <span className="text-white fs-xxxl font-wieght-bolder">60:00</span>
                       </div>
                       <div className="">
-                        <span className="text-morado fs-l">Restante</span>
+                        <span className="text-morado fs-xl">Restante</span>
                       </div>
                     </div>
                   </CircularProgressbarWithChildren >
@@ -152,13 +152,13 @@ function App() {
               </div>
 
               <div className="row pt-4">
-                <div className="col-6 text-center fs-l">
+                <div className="col-6 text-center fs-xl">
                   <div>
                     <i className="fas fa-sun text-pink fs-xl icon-round-border"></i>
                   </div>
                   <span className="text-white">¡Llamar al 1 2 3!</span>
                 </div>
-                <div className="col-6 text-center fs-l">
+                <div className="col-6 text-center fs-xl">
                   <div>
                     <i className="fas fa-question-circle text-pink fs-xl icon-round-border"></i>
                   </div>

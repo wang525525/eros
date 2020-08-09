@@ -31,15 +31,15 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoServiceAdd} name={'Pagar'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoServiceAdd} name={'Pagar'}></TopbarSimple>
         <div className="container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
               <div className="row justify-content-center set_width_container">
                 <div className="col-12 mt-5 text-center">
-                  <span className="text-morado fs-xl">
+                  <span className="text-morado fs-xxl">
                     ¿Cómo quieres pagar?
                   </span>
                 </div>
@@ -47,12 +47,12 @@ function App() {
 
 
               <div className="App-form-register row justify-content-center">
-                <div className="col-12 col-sm-12 text-left mt-3">
+                <div className="col-12 col-sm-12 text-left mt-3 border-b">
                   <div className="input-group mb-3 border-active rounded">
-                    <div className="col-6 label label-group pt-2 d-flex" >
-                      <img src={moneda} className="img-icon-32 mr-2 my-auto" />
+                    <div className="col-6 label label-group d-flex" >
+                      <img src={moneda} className="img-icon-48 mr-2 my-auto" />
                       <div className="my-auto">
-                        <span className="text-morado fs-n">Eroscoin</span>
+                        <span className="text-morado fs-xl">Eroscoin</span>
                       </div>
                     </div>
                     <input  autoComplete="off"
@@ -63,10 +63,10 @@ function App() {
                   </div>
 
                   <div className="input-group my-3 border-grey rounded">
-                    <div className="col-6 label label-group pt-2 d-flex" >
-                      <i className="fas fa-money-bill-alt text-gray mr-2 my-auto fs-xl"></i>
+                    <div className="col-6 label label-group d-flex" >
+                      <i className="fas fa-money-bill-alt text-gray mr-3 my-auto fs-xxl"></i>
                       <div className="my-auto">
-                        <span className="text-morado fs-n">Efectivo</span>
+                        <span className="text-morado fs-xl">Efectivo</span>
                       </div>
                     </div>
                     <input  autoComplete="off"

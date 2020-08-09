@@ -34,9 +34,9 @@ function App() {
   }
   return (
     <div>
-      <TopbarSimple clickHandler={gotoSubContact} name={'Contratar'}></TopbarSimple>
+      
       <div className="App-LogoCenter App-splash" style={divBackground}>
-        
+        <TopbarSimple clickHandler={gotoSubContact} name={'Contratar'}></TopbarSimple>
         <div className="App-form-register container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">

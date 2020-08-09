@@ -41,9 +41,9 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoHome} name={'Buscador'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoHome} name={'Buscador'}></TopbarSimple>
         <div className="App-form-secondary container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
@@ -80,7 +80,6 @@ function App() {
                       <option value="Escort">Escort</option>
                       <option value="ShowStriptease">Show Striptease</option>
                       <option value="Amanecida">Amanecida</option>
-                      <option value="Videochat">Videochat</option>
                     </select>
                   </div>
                 </div>
@@ -170,12 +169,12 @@ function App() {
               <div className="row justify-content-center mt-2">
                 <div className="col-6">
                   <div className="App-Question--x2">
-                    Estilo de pelo:
+                    Estilo de cabello:
                   </div>
                   <div className="input-group mb-3">
                     <select className="form-control" name="gender">
-                      <option value="larga">larga</option>
-                      <option value="corta">corta</option>
+                      <option value="larga">largo</option>
+                      <option value="corta">corto</option>
                     </select>
                   </div>
                 </div>

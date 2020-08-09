@@ -57,9 +57,9 @@ function App() {
   return (
 
     <div>
-      <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
+      
       <div className="App-Logo App-splash" style={divBackground}>
-
+        <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
         <div className="App-form-secondary container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7 pt-3">
@@ -84,33 +84,33 @@ function App() {
               <div className="d-flex pt-2">
                 <img src={moneda} alt="P" className="img-icon-54" />
                 <div className="pl-3">
-                  <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                  <div className="text-left App-Question--x2 fs-l ">
                     $100
                   </div>
-                  <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                  <div className="App-Question--x2 fs-l text-fucsia text-left">
                     COP $50.000
                   </div>
                 </div>
               </div>
 
               <div className="pt-2">
-                <span className="text-morado fs-l">Detalles de pago</span>
-                <div className="input-group my-3 p-3 rounded">
+                <span className="text-morado fs-xl">Detalles de pago</span>
+                <div className="input-group my-3 p-3 rounded fs-xl">
 
                   <div className="d-flex pt-2 w-100 border-b">
                     <div className="pl-3">
-                      <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                      <div className="text-morado">
                         Stripetease
                       </div>
-                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                      <div className="text-pink">
                         Valor de servicio
                       </div>
                     </div>
                     <div className="ml-auto mt-auto mb-auto">
-                      <div className="text-left App-Question--x2 tamano-texto-interno2 text-right">
+                      <div className="text-morado text-right">
                         $200
                       </div>
-                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right">
+                      <div className="text-pink text-right">
                         COP $100.000
                       </div>
                     </div>
@@ -118,18 +118,18 @@ function App() {
 
                   <div className="d-flex pt-2 w-100">
                     <div className="pl-3">
-                      <div className="text-left App-Question--x2 tamano-texto-interno2 ">
+                      <div className="text-morado">
                         A domicilio
                       </div>
-                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-left">
+                      <div className="text-pink">
                         valor del transpore
                       </div>
                     </div>
                     <div className="ml-auto mt-auto mb-auto">
-                      <div className="text-left App-Question--x2 tamano-texto-interno2 text-right">
+                      <div className="text-morado text-right">
                         $20
                       </div>
-                      <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right">
+                      <div className="text-pink text-right">
                         COP $10.000
                       </div>
                     </div>
@@ -140,13 +140,13 @@ function App() {
 
               <div className="d-flex pt-2">
                 <div className="pl-3 my-auto">
-                  <span className="text-morado fs-l">Total a pagar</span>
+                  <span className="text-morado fs-xl">Total a pagar</span>
                 </div>
                 <div className="ml-auto mt-auto mb-auto">
-                  <div className="text-left App-Question--x2 tamano-texto-interno2 text-right fs-xl">
+                  <div className="text-morado text-right fs-xl">
                     $220
                   </div>
-                  <div className="App-Question--x2 tamano-texto-interno text-fucsia text-right fs-l">
+                  <div className="text-pink text-right fs-xl">
                     COP $110.000
                   </div>
                 </div>
