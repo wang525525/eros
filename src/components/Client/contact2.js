@@ -37,13 +37,13 @@ function App() {
   return (
     <div>
       
-      <div className="App-LogoCenter App-splash" style={divBackground}>
+      <div className="App-Logo App-splash" style={divBackground}>
         <TopbarSimple clickHandler={gotoPrev} name={'Contratar'}></TopbarSimple>
         <div className="App-form-register container">
           <div className="row justify-content-center set_width_container">
             <div className="col-sm-12 col-md-8 col-lg-7">
   
-              <div className="row justify-content-center mt-4 px-4">
+              <div className="row justify-content-center mt-5 pt-5 px-4">
                 <div className="col-sm-12  background-gray rounded d-flex">
                   <i className="far fa-clock fs-xxl text-morado my-auto"></i>
                   <div className="text-gray pl-2 fs-l">

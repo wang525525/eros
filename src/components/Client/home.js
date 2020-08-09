@@ -65,9 +65,24 @@ const  inputsDefault  = {
   }
 }
 
+const  serviceInputsDefault  = {
+  cirugias:{
+    "Besos":true,
+    "Anal":true,
+    "Vaginal":false,
+    "Masaje":false,
+    "Ducha":false,
+    "Facial":true,
+    "Orgia":true,
+    "Oral con condon":true,
+    "Strap-on":true,
+  }
+}
+
 function App() {
   const classes = useStyles();
   const [inputs, setInputs] =   useState(inputsDefault);
+  const [serviceInputs, setServiceInputs] =   useState(serviceInputsDefault);
 
   function clickHandler(e) {
     e.preventDefault()
@@ -150,7 +165,15 @@ function App() {
                         <span className="text-morado fs-xl pl-2">Mi servicio de prepago incluye:</span>
                       </div>
                       <div className="d-flex pt-2 px-5">
-                        <span className="ml-auto text-grey">Besos, Anal, Vaginal, Masaje, Ducha, Facial, Orgia, Oral con condon, Strap-on</span>
+                        {/* <span className="ml-auto text-grey">Besos, Anal, Vaginal, Masaje, Ducha, Facial, Orgia, Oral con condon, Strap-on</span> */}
+                        <ItemsDinamics
+                            name="cirugias"
+                            inputs={serviceInputs}
+                            setInputs={setServiceInputs}
+                            boolTitle={false}
+                            boolNew={false}
+                            title="Agregar más cirugías"
+                            itemsDefault={serviceInputsDefault.cirugias}/>
                       </div>
 
                       <div className="row justify-content-center pt-2 fs-l">
